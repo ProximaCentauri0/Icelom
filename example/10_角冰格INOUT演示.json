@@ -1,0 +1,159 @@
+{
+ "format": "icelom-v1",
+ "w": 6,
+ "h": 5,
+ "cells": [
+  "i",
+  "w",
+  "i",
+  "w",
+  "w",
+  "w",
+  "w",
+  "w",
+  "w",
+  "w",
+  "i",
+  "w",
+  "w",
+  "i",
+  "w",
+  "w",
+  "w",
+  "w",
+  "w",
+  "w",
+  "w",
+  "i",
+  "w",
+  "w",
+  "w",
+  "w",
+  "i",
+  "w",
+  "w",
+  "i"
+ ],
+ "numbers": [],
+ "in": {
+  "x": 0,
+  "y": 0,
+  "side": "L"
+ },
+ "out": {
+  "x": 5,
+  "y": 4,
+  "side": "R"
+ },
+ "edges": [
+  {
+   "x": 0,
+   "y": 0,
+   "side": "R",
+   "kind": "arrow",
+   "dir": "R"
+  },
+  {
+   "x": 1,
+   "y": 0,
+   "side": "R",
+   "kind": "arrow",
+   "dir": "R"
+  },
+  {
+   "x": 2,
+   "y": 0,
+   "side": "R",
+   "kind": "arrow",
+   "dir": "R"
+  },
+  {
+   "x": 3,
+   "y": 0,
+   "side": "R",
+   "kind": "arrow",
+   "dir": "R"
+  },
+  {
+   "x": 4,
+   "y": 0,
+   "side": "R",
+   "kind": "arrow",
+   "dir": "R"
+  },
+  {
+   "x": 5,
+   "y": 0,
+   "side": "D",
+   "kind": "arrow",
+   "dir": "D"
+  },
+  {
+   "x": 4,
+   "y": 1,
+   "side": "R",
+   "kind": "arrow",
+   "dir": "L"
+  },
+  {
+   "x": 3,
+   "y": 1,
+   "side": "R",
+   "kind": "arrow",
+   "dir": "L"
+  },
+  {
+   "x": 2,
+   "y": 1,
+   "side": "R",
+   "kind": "arrow",
+   "dir": "L"
+  },
+  {
+   "x": 1,
+   "y": 1,
+   "side": "R",
+   "kind": "arrow",
+   "dir": "L"
+  },
+  {
+   "x": 0,
+   "y": 1,
+   "side": "R",
+   "kind": "arrow",
+   "dir": "L"
+  },
+  {
+   "x": 0,
+   "y": 1,
+   "side": "D",
+   "kind": "arrow",
+   "dir": "D"
+  },
+  {
+   "x": 0,
+   "y": 2,
+   "side": "R",
+   "kind": "arrow",
+   "dir": "R"
+  },
+  {
+   "x": 1,
+   "y": 2,
+   "side": "R",
+   "kind": "arrow",
+   "dir": "R"
+  },
+  {
+   "x": 2,
+   "y": 2,
+   "side": "R",
+   "kind": "arrow",
+   "dir": "R"
+  }
+ ],
+ "options": {
+  "cover_all_whites": true
+ },
+ "_note": "IN/OUT 位于角上的冰格(需点击相邻格指定入/出界方向)"
+}

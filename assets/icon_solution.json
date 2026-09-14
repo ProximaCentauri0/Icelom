@@ -1,0 +1,28 @@
+{
+ "puzzle": "assets/icon_puzzle.json",
+ "cells": 5,
+ "path": [
+  [
+   1,
+   0
+  ],
+  [
+   0,
+   0
+  ],
+  [
+   0,
+   1
+  ],
+  [
+   1,
+   1
+  ],
+  [
+   1,
+   0
+  ]
+ ],
+ "verify": "OK",
+ "note": "由 tools/make_icon.py 求解图标题面得到; 图标本身不画解"
+}
