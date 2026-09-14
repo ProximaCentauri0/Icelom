@@ -1,0 +1,532 @@
+# -*- coding: utf-8 -*-
+"""IceLom 题面/解 的高保真 PNG 渲染器 (Pillow, 超采样抗锯齿)。
+
+风格对齐 Nikoli 纸面印刷风 (样张实测参数, 比例相对格边长 cs):
+  * 白底; 内部网格 = 灰色细虚线 (线宽 0.03cs, 长 0.125cs 空 0.078cs),
+    画在冰格蓝底**之上**(冰格共享边的虚线可见);
+  * 冰格 = 浅蓝 (192,224,255) 填充; 冰**区域外缘**描加粗黑边 (0.095cs, 居中于格线,
+    相邻冰格共享边不描 → 视觉上合并成一大块);
+  * 外边框 = 加粗黑实线 (0.11cs), 连续无缺口, 线路/箭头直接压过;
+  * 解线路 = 深粉红 (255,24,158) 粗线 (0.11cs), 直角尖角,
+    IN 端向外伸 0.34cs、OUT 端向外伸 0.50cs;
+  * IN/OUT = 黑色实心三角箭头 + 细杆压在粉线上, 标签为黑色大字 (字高 0.58cs);
+  * 数字/"?" = 大号黑字 (字高 0.83cs), 画在线路之上。
+
+被两处共用:
+  * icelom_gui.py 的「导出解为图片」(高分辨率重绘, 替代旧的屏幕截图);
+  * tools/render_solution.py (命令行把某个解渲染成 PNG)。
+
+用法:
+    render_puzzle(puz_dict, path=None, cell=64, scale=4, title="") -> PIL.Image
+    render_to_file(puz_dict, path, out_png, cell=64, scale=4, title="")
+"""
+from PIL import Image, ImageDraw, ImageFont
+
+# ---- 调色板 ----
+INK = (0, 0, 0)
+GRID = (127, 127, 127)
+ICE_FILL = (192, 224, 255)
+PINK = (255, 24, 158)
+WALL = (211, 47, 47)
+
+# ---- 风格比例 (相对 cs) ----
+FRAME_W = 0.11     # 外框线宽
+GRID_W = 0.032     # 虚线线宽
+DASH_ON = 0.125    # 虚线段长
+DASH_OFF = 0.078   # 虚线空长
+ICE_BW = 0.095     # 冰格外缘黑边宽
+PATH_W = 0.11      # 线路线宽
+NUM_EM = 0.75      # 数字字号的 em (YaHei 数字墨高 ≈0.77em → 墨高≈0.58cs, 同样张)
+LABEL_EM = 0.54    # IN/OUT 标签字号的 em
+OV_IN = 0.34       # IN 端粉线伸出框外的距离(从框外缘起算)
+OV_OUT = 0.50      # OUT 端粉线伸出框外的距离
+
+DIRS = {"R": (1, 0), "D": (0, 1), "L": (-1, 0), "U": (0, -1)}
+OPP = {"R": "L", "L": "R", "U": "D", "D": "U"}
+
+_FONT_CACHE = {}
+
+
+def _font(em):
+    """按 em 像素取字体 (优先日文/中文黑体, 数字字形接近样张)。"""
+    em = max(6, int(round(em)))
+    f = _FONT_CACHE.get(em)
+    if f is None:
+        for p in (r"C:\Windows\Fonts\meiryo.ttc", r"C:\Windows\Fonts\msyh.ttc",
+                  r"C:\Windows\Fonts\segoeui.ttf", r"C:\Windows\Fonts\arial.ttf"):
+            try:
+                f = ImageFont.truetype(p, em)
+                break
+            except Exception:
+                continue
+        if f is None:
+            f = ImageFont.load_default()
+        _FONT_CACHE[em] = f
+    return f
+
+
+def _draw_board(dr, puz, cs, ox, oy, w, h, ice, is_ice):
+    """题面底图: 冰格蓝底 + 灰虚线网格 + 冰区外缘黑边 + 外框 (渲染器内部共用)。"""
+    def rect(x0, y0, x1, y1, **kw):
+        dr.rectangle([ox + x0, oy + y0, ox + x1, oy + y1], **kw)
+
+    def cx(x):
+        return (x + 0.5) * cs
+
+    def cy(y):
+        return (y + 0.5) * cs
+
+    fw = FRAME_W * cs
+    # ---- 1. 冰格蓝底 ----
+    for y in range(h):
+        for x in range(w):
+            if ice[y][x]:
+                rect(x * cs, y * cs, (x + 1) * cs, (y + 1) * cs, fill=ICE_FILL)
+    # ---- 2. 灰色虚线网格 ----
+    gw = GRID_W * cs
+    on, off = DASH_ON * cs, DASH_OFF * cs
+    for i in range(1, w):
+        y = 0.0
+        while y < h * cs:
+            y2 = min(y + on, h * cs)
+            rect(i * cs - gw / 2, y, i * cs + gw / 2, y2, fill=GRID)
+            y = y2 + off
+    for j in range(1, h):
+        x = 0.0
+        while x < w * cs:
+            x2 = min(x + on, w * cs)
+            rect(x, j * cs - gw / 2, x2, j * cs + gw / 2, fill=GRID)
+            x = x2 + off
+    # ---- 3. 冰区外缘黑边 ----
+    bw = ICE_BW * cs
+    for y in range(h):
+        for x in range(w):
+            if not ice[y][x]:
+                continue
+            if not is_ice(x - 1, y):
+                rect(x * cs - bw / 2, y * cs - bw / 2, x * cs + bw / 2,
+                     (y + 1) * cs + bw / 2, fill=INK)
+            if not is_ice(x + 1, y):
+                rect((x + 1) * cs - bw / 2, y * cs - bw / 2,
+                     (x + 1) * cs + bw / 2, (y + 1) * cs + bw / 2, fill=INK)
+            if not is_ice(x, y - 1):
+                rect(x * cs - bw / 2, y * cs - bw / 2,
+                     (x + 1) * cs + bw / 2, y * cs + bw / 2, fill=INK)
+            if not is_ice(x, y + 1):
+                rect(x * cs - bw / 2, (y + 1) * cs - bw / 2,
+                     (x + 1) * cs + bw / 2, (y + 1) * cs + bw / 2, fill=INK)
+    # ---- 4. 加粗黑外框 ----
+    rect(-fw / 2, -fw / 2, w * cs + fw / 2, fw / 2, fill=INK)
+    rect(-fw / 2, h * cs - fw / 2, w * cs + fw / 2, h * cs + fw / 2, fill=INK)
+    rect(-fw / 2, -fw / 2, fw / 2, h * cs + fw / 2, fill=INK)
+    rect(w * cs - fw / 2, -fw / 2, w * cs + fw / 2, h * cs + fw / 2, fill=INK)
+
+
+def edge_segment(x, y, side, cs):
+    """把"左格 R / 上格 D"式边键换算成 (x0,y0,x1,y1) 线段(格心到格心)。"""
+    dx, dy = DIRS[side]
+    return ((x + 0.5) * cs, (y + 0.5) * cs, (x + 0.5 + dx) * cs, (y + 0.5 + dy) * cs)
+
+
+def render_state(puz, state, cell=48, scale=3, title="", out_png=None):
+    """渲染"推导状态"图: 已确定边(深粉红粗线) + 仍未定边(浅灰细线) + 每格候选数。
+
+    state 由 `tools/deduce.py --out` 生成(键 `determined` / `possible` / `cell_table`)。
+    只画格心到格心的内部边; 边框 IN/OUT 边不画(它们恒为确定)。
+    """
+    w, h = puz["w"], puz["h"]
+    cs = float(cell) * scale
+    cells = puz["cells"]
+    numbers = {(n["x"], n["y"]): n["n"] for n in puz.get("numbers", [])}
+    fin = puz.get("in") or {}
+    fout = puz.get("out") or {}
+
+    mL = mR = mU = mD = 0.35 * cs
+    for f in (fin, fout):
+        if f.get("x") is None or not f.get("side"):
+            continue
+        need = 2.0 * cs
+        if f["side"] == "L":
+            mL = max(mL, need)
+        elif f["side"] == "R":
+            mR = max(mR, need)
+        elif f["side"] == "U":
+            mU = max(mU, need)
+        else:
+            mD = max(mD, need)
+    if title:
+        mU = max(mU, 0.9 * cs)
+        W_est = mL + w * cs + mR
+        need = _font(0.42 * cs).getlength(title) + 0.4 * cs
+        if need > W_est:                  # 标题比盘面宽: 加宽留白, 别让字被裁掉
+            mR += need - W_est
+    W = int(round(mL + w * cs + mR))
+    H = int(round(mU + h * cs + mD))
+    im = Image.new("RGB", (W, H), "white")
+    dr = ImageDraw.Draw(im)
+    ox, oy = mL, mU
+
+    def rect(x0, y0, x1, y1, **kw):
+        dr.rectangle([ox + x0, oy + y0, ox + x1, oy + y1], **kw)
+
+    ice = [[cells[y * w + x] == "i" for x in range(w)] for y in range(h)]
+
+    def is_ice(x, y):
+        return 0 <= x < w and 0 <= y < h and ice[y][x]
+
+    _draw_board(dr, puz, cs, ox, oy, w, h, ice, is_ice)
+
+    def draw_edge(key, color, width, dash=None):
+        x, y, s = key
+        if s not in ("R", "D"):        # 只画规范化边(左格 R / 上格 D)
+            return
+        x0, y0, x1, y1 = edge_segment(x, y, s, cs)
+        if dash:
+            # 手工短划线(与网格一致的画法, 避免不同 Pillow 版本的 dash 表现差异)
+            import math
+            total = math.hypot(x1 - x0, y1 - y0)
+            ux, uy = (x1 - x0) / total, (y1 - y0) / total
+            t = 0.0
+            while t < total:
+                t2 = min(t + dash[0] * cs, total)
+                dr.line([ox + x0 + ux * t, oy + y0 + uy * t,
+                         ox + x0 + ux * t2, oy + y0 + uy * t2],
+                        fill=color, width=width)
+                t = t2 + dash[1] * cs
+        else:
+            dr.line([ox + x0, oy + y0, ox + x1, oy + y1], fill=color, width=width)
+
+    # ---- 仍未定边(浅灰细虚线), 再画已确定边(深粉红粗线)压在上面 ----
+    for key in state.get("possible", []):
+        if tuple(key[2:]) and len(key) == 3:
+            draw_edge(tuple(key), (168, 168, 168), max(2, int(0.035 * cs)),
+                      dash=(0.10, 0.10))
+    for key in state.get("determined", []):
+        if len(key) == 3:
+            draw_edge(tuple(key), PINK, max(3, int(0.10 * cs)))
+
+    # ---- 数字 / "?" ----
+    f_num = _font(NUM_EM * cs)
+    for (x, y), v in numbers.items():
+        dr.text((ox + (x + 0.5) * cs, oy + (y + 0.5) * cs),
+                ("?" if v < 0 else str(v)), font=f_num, fill=INK, anchor="mm")
+
+    # ---- 每格"剩余候选边数"(>2 才画; 可选, 图小的时候容易糊) ----
+    if state.get("show_avail", True) and cell >= 40:
+        f_small = _font(0.30 * cs)
+        for row in state.get("cell_table", []):
+            x, y, av = row["x"], row["y"], row["avail"]
+            if (x, y) in numbers or av <= 2:
+                continue
+            dr.text((ox + (x + 0.50) * cs, oy + (y + 0.80) * cs), str(av),
+                    font=f_small, fill=(150, 175, 215), anchor="mm")
+
+    # ---- IN/OUT 箭头与标签 ----
+    f_lab = _font(LABEL_EM * cs)
+    f_inout = _font(0.40 * cs)
+    for f, label, inward in ((fin, "IN", True), (fout, "OUT", False)):
+        if f.get("x") is None:
+            continue
+        x, y = f["x"], f["y"]
+        s = f.get("side")
+        if not s:
+            half_w, half_h = 0.46 * cs, 0.27 * cs
+            dr.rectangle([ox + (x + 0.5) * cs - half_w, oy + (y + 0.5) * cs - half_h,
+                          ox + (x + 0.5) * cs + half_w, oy + (y + 0.5) * cs + half_h],
+                         fill=(255, 251, 232), outline=(141, 110, 99), width=max(1, scale))
+            dr.text((ox + (x + 0.5) * cs, oy + (y + 0.5) * cs), label,
+                    font=f_inout, fill=INK, anchor="mm")
+            continue
+        dx, dy = DIRS[s]
+        if s == "L":
+            bpt = (0.0, (y + 0.5) * cs)
+        elif s == "R":
+            bpt = (w * cs, (y + 0.5) * cs)
+        elif s == "U":
+            bpt = ((x + 0.5) * cs, 0.0)
+        else:
+            bpt = ((x + 0.5) * cs, h * cs)
+        fw = FRAME_W * cs
+        if inward:
+            tip = (bpt[0] - dx * 0.36 * cs, bpt[1] - dy * 0.36 * cs)
+            base = (bpt[0] - dx * 0.14 * cs, bpt[1] - dy * 0.14 * cs)
+            tail = (bpt[0] + dx * (fw / 2 + 0.30 * cs), bpt[1] + dy * (fw / 2 + 0.30 * cs))
+            halfw, sw = 0.19 * cs, 0.045 * cs
+        else:
+            tip = (bpt[0] + dx * (fw / 2 + 0.28 * cs), bpt[1] + dy * (fw / 2 + 0.28 * cs))
+            base = (bpt[0] + dx * (fw / 2 + 0.08 * cs), bpt[1] + dy * (fw / 2 + 0.08 * cs))
+            tail = (bpt[0] - dx * 0.12 * cs, bpt[1] - dy * 0.12 * cs)
+            halfw, sw = 0.21 * cs, 0.06 * cs
+        rect(min(tail[0], base[0]) - sw / 2, min(tail[1], base[1]) - sw / 2,
+             max(tail[0], base[0]) + sw / 2, max(tail[1], base[1]) + sw / 2, fill=INK)
+        px_, py_ = -dy, dx
+        dr.polygon([(ox + tip[0], oy + tip[1]),
+                    (ox + base[0] - px_ * halfw, oy + base[1] - py_ * halfw),
+                    (ox + base[0] + px_ * halfw, oy + base[1] + py_ * halfw)],
+                   fill=INK)
+        f_lab2 = _font(0.50 * cs)
+        if s == "U":
+            lc = ((x + 0.5) * cs, -0.86 * cs)
+        elif s == "D":
+            lc = ((x + 0.5) * cs, h * cs + 0.86 * cs)
+        elif s == "L":
+            lc = (-0.80 * cs, (y + 0.5) * cs - 0.28 * cs)
+        else:
+            lc = (w * cs + 0.80 * cs, (y + 0.5) * cs - 0.28 * cs)
+        dr.text((ox + lc[0], oy + lc[1]), label, font=f_lab2, fill=INK, anchor="mm")
+
+    if title:
+        dr.text((ox, oy - 0.62 * cs), title, font=_font(0.42 * cs),
+                fill=(90, 90, 90), anchor="lm")
+
+    out = im.resize((max(1, int(round(W / scale))), max(1, int(round(H / scale)))),
+                    Image.LANCZOS)
+    if out_png:
+        out.save(out_png)
+    return out
+
+
+def render_puzzle(puz, path=None, cell=64, scale=4, title=""):
+    """把谜题(可选带解)渲染成 PIL.Image。
+
+    puz: icelom-v1 JSON dict; path: [[x,y],...] 解线路 (可含冰格重复穿越)。
+    cell: 每格边长(输出像素); scale: 超采样倍数 (先放大画再缩小, 抗锯齿)。
+    """
+    w, h = puz["w"], puz["h"]
+    cs = float(cell) * scale
+    cells = puz["cells"]
+    numbers = {(n["x"], n["y"]): n["n"] for n in puz.get("numbers", [])}
+    fin = puz.get("in") or {}
+    fout = puz.get("out") or {}
+
+    # ---- 画布与留白 (有 IN/OUT 标签的一侧留大) ----
+    mL = mR = mU = mD = 0.35 * cs
+    for f in (fin, fout):
+        if f.get("x") is None or not f.get("side"):
+            continue
+        need = 2.0 * cs
+        if f["side"] == "L":
+            mL = max(mL, need)
+        elif f["side"] == "R":
+            mR = max(mR, need)
+        elif f["side"] == "U":
+            mU = max(mU, need)
+        else:
+            mD = max(mD, need)
+    if title:
+        mU = max(mU, 0.9 * cs)
+    W = int(round(mL + w * cs + mR))
+    H = int(round(mU + h * cs + mD))
+    im = Image.new("RGB", (W, H), "white")
+    dr = ImageDraw.Draw(im)
+
+    ox, oy = mL, mU
+
+    def rect(x0, y0, x1, y1, **kw):
+        dr.rectangle([ox + x0, oy + y0, ox + x1, oy + y1], **kw)
+
+    def cx(x):
+        return (x + 0.5) * cs
+
+    def cy(y):
+        return (y + 0.5) * cs
+
+    fw = FRAME_W * cs
+    ice = [[cells[y * w + x] == "i" for x in range(w)] for y in range(h)]
+
+    def is_ice(x, y):
+        return 0 <= x < w and 0 <= y < h and ice[y][x]
+
+    # ---- 1. 冰格蓝底 ----
+    for y in range(h):
+        for x in range(w):
+            if ice[y][x]:
+                rect(x * cs, y * cs, (x + 1) * cs, (y + 1) * cs, fill=ICE_FILL)
+
+    # ---- 2. 灰色虚线网格 (内部线; 画在蓝底之上, 共享边虚线可见) ----
+    gw = GRID_W * cs
+    on, off = DASH_ON * cs, DASH_OFF * cs
+    for i in range(1, w):
+        y = 0.0
+        while y < h * cs:
+            y2 = min(y + on, h * cs)
+            rect(i * cs - gw / 2, y, i * cs + gw / 2, y2, fill=GRID)
+            y = y2 + off
+    for j in range(1, h):
+        x = 0.0
+        while x < w * cs:
+            x2 = min(x + on, w * cs)
+            rect(x, j * cs - gw / 2, x2, j * cs + gw / 2, fill=GRID)
+            x = x2 + off
+
+    # ---- 3. 冰区域外缘黑边 (相邻冰格共享边不描, 端头各外延 bw/2 补直角) ----
+    bw = ICE_BW * cs
+    for y in range(h):
+        for x in range(w):
+            if not ice[y][x]:
+                continue
+            if not is_ice(x - 1, y):
+                rect(x * cs - bw / 2, y * cs - bw / 2, x * cs + bw / 2,
+                     (y + 1) * cs + bw / 2, fill=INK)
+            if not is_ice(x + 1, y):
+                rect((x + 1) * cs - bw / 2, y * cs - bw / 2,
+                     (x + 1) * cs + bw / 2, (y + 1) * cs + bw / 2, fill=INK)
+            if not is_ice(x, y - 1):
+                rect(x * cs - bw / 2, y * cs - bw / 2,
+                     (x + 1) * cs + bw / 2, y * cs + bw / 2, fill=INK)
+            if not is_ice(x, y + 1):
+                rect(x * cs - bw / 2, (y + 1) * cs - bw / 2,
+                     (x + 1) * cs + bw / 2, (y + 1) * cs + bw / 2, fill=INK)
+
+    # ---- 4. 加粗黑外框 ----
+    rect(-fw / 2, -fw / 2, w * cs + fw / 2, fw / 2, fill=INK)
+    rect(-fw / 2, h * cs - fw / 2, w * cs + fw / 2, h * cs + fw / 2, fill=INK)
+    rect(-fw / 2, -fw / 2, fw / 2, h * cs + fw / 2, fill=INK)
+    rect(w * cs - fw / 2, -fw / 2, w * cs + fw / 2, h * cs + fw / 2, fill=INK)
+
+    # ---- 5. 边标记 (线段/箭头=垂直于边, 墙=平行于边; 边框上的往盘内挪) ----
+    for e in sorted(puz.get("edges", []), key=lambda e: (e["y"], e["x"], e["side"])):
+        x, y, s, kind = e["x"], e["y"], e["side"], e["kind"]
+        if s in ("R", "L"):
+            bx = (x + 1) * cs if s == "R" else x * cs
+            mid = [bx, cy(y)]
+            para = (0.0, 1.0)
+        else:
+            by = (y + 1) * cs if s == "D" else y * cs
+            mid = [cx(x), by]
+            para = (1.0, 0.0)
+        perp = (para[1], para[0])
+        on_frame = not (0 <= x + DIRS[s][0] < w and 0 <= y + DIRS[s][1] < h)
+        if on_frame:
+            iv = DIRS[OPP[s]]
+            offi = fw * 0.5 + 0.16 * cs
+            mid[0] += iv[0] * offi
+            mid[1] += iv[1] * offi
+        if kind == "wall":
+            hl = 0.44 * cs
+            rect(mid[0] - para[0] * hl - 0.05 * cs, mid[1] - para[1] * hl - 0.05 * cs,
+                 mid[0] + para[0] * hl + 0.05 * cs, mid[1] + para[1] * hl + 0.05 * cs,
+                 fill=WALL)
+        else:
+            dv = DIRS[e["dir"]] if kind == "arrow" else perp
+            if kind == "arrow":
+                tail = (mid[0] - dv[0] * 0.34 * cs, mid[1] - dv[1] * 0.34 * cs)
+                base = (mid[0] + dv[0] * 0.02 * cs, mid[1] + dv[1] * 0.02 * cs)
+                tip = (mid[0] + dv[0] * 0.26 * cs, mid[1] + dv[1] * 0.26 * cs)
+                rect(min(tail[0], base[0]) - 0.045 * cs, min(tail[1], base[1]) - 0.045 * cs,
+                     max(tail[0], base[0]) + 0.045 * cs, max(tail[1], base[1]) + 0.045 * cs,
+                     fill=INK)
+                hw = 0.17 * cs
+                dr.polygon([(ox + tip[0], oy + tip[1]),
+                            (ox + base[0] - perp[0] * hw, oy + base[1] - perp[1] * hw),
+                            (ox + base[0] + perp[0] * hw, oy + base[1] + perp[1] * hw)],
+                           fill=INK)
+            else:
+                a = (mid[0] - dv[0] * 0.28 * cs, mid[1] - dv[1] * 0.28 * cs)
+                b2 = (mid[0] + dv[0] * 0.28 * cs, mid[1] + dv[1] * 0.28 * cs)
+                rect(min(a[0], b2[0]) - 0.045 * cs, min(a[1], b2[1]) - 0.045 * cs,
+                     max(a[0], b2[0]) + 0.045 * cs, max(a[1], b2[1]) + 0.045 * cs,
+                     fill=INK)
+
+    # ---- 6. 解线路 (直角尖角: 逐段画矩形, 端头各外延 pw/2; 边框 IN/OUT 端伸出框外) ----
+    if path:
+        pts = []
+        if fin.get("x") is not None and fin.get("side"):
+            dx, dy = DIRS[fin["side"]]
+            ext = cs / 2 + fw / 2 + OV_IN * cs
+            pts.append((cx(fin["x"]) + dx * ext, cy(fin["y"]) + dy * ext))
+        pts += [(cx(x), cy(y)) for x, y in path]
+        if fout.get("x") is not None and fout.get("side"):
+            dx, dy = DIRS[fout["side"]]
+            ext = cs / 2 + fw / 2 + OV_OUT * cs
+            pts.append((cx(fout["x"]) + dx * ext, cy(fout["y"]) + dy * ext))
+        ded = [pts[0]]
+        for q in pts[1:]:
+            if q != ded[-1]:
+                ded.append(q)
+        pw = PATH_W * cs
+        r = pw / 2
+        for (x0, y0), (x1, y1) in zip(ded, ded[1:]):
+            if abs(x0 - x1) < 0.5:      # 竖直段
+                rect(x0 - r, min(y0, y1) - r, x0 + r, max(y0, y1) + r, fill=PINK)
+            elif abs(y0 - y1) < 0.5:    # 水平段
+                rect(min(x0, x1) - r, y0 - r, max(x0, x1) + r, y0 + r, fill=PINK)
+
+    # ---- 7. 数字 / "?" (画在线路之上) ----
+    f_num = _font(NUM_EM * cs)
+    for (x, y), v in numbers.items():
+        dr.text((ox + cx(x), oy + cy(y)), ("?" if v < 0 else str(v)),
+                font=f_num, fill=INK, anchor="mm")
+
+    # ---- 8. IN/OUT 黑色箭头 + 标签 (内部 IN/OUT = 衬底 + 文字) ----
+    f_lab = _font(LABEL_EM * cs)
+    f_inout = _font(0.40 * cs)
+
+    for f, label, inward in ((fin, "IN", True), (fout, "OUT", False)):
+        if f.get("x") is None:
+            continue
+        x, y = f["x"], f["y"]
+        s = f.get("side")
+        if not s:
+            # ---- 内部 IN/OUT: 衬底矩形 + 粗体文字 ----
+            half_w, half_h = 0.46 * cs, 0.27 * cs
+            dr.rectangle([ox + cx(x) - half_w, oy + cy(y) - half_h,
+                          ox + cx(x) + half_w, oy + cy(y) + half_h],
+                         fill=(255, 251, 232), outline=(141, 110, 99), width=max(1, scale))
+            dr.text((ox + cx(x), oy + cy(y)), label, font=f_inout, fill=INK, anchor="mm")
+            continue
+        dx, dy = DIRS[s]                      # 向外
+        if s == "L":
+            bpt = (0.0, cy(y))
+        elif s == "R":
+            bpt = (w * cs, cy(y))
+        elif s == "U":
+            bpt = (cx(x), 0.0)
+        else:
+            bpt = (cx(x), h * cs)
+        if inward:
+            tip = (bpt[0] - dx * 0.36 * cs, bpt[1] - dy * 0.36 * cs)
+            base = (bpt[0] - dx * 0.14 * cs, bpt[1] - dy * 0.14 * cs)
+            tail = (bpt[0] + dx * (fw / 2 + 0.30 * cs), bpt[1] + dy * (fw / 2 + 0.30 * cs))
+            halfw = 0.19 * cs
+            sw = 0.045 * cs
+        else:
+            tip = (bpt[0] + dx * (fw / 2 + 0.28 * cs), bpt[1] + dy * (fw / 2 + 0.28 * cs))
+            base = (bpt[0] + dx * (fw / 2 + 0.08 * cs), bpt[1] + dy * (fw / 2 + 0.08 * cs))
+            tail = (bpt[0] - dx * 0.12 * cs, bpt[1] - dy * 0.12 * cs)
+            halfw = 0.21 * cs
+            sw = 0.06 * cs
+        rect(min(tail[0], base[0]) - sw / 2, min(tail[1], base[1]) - sw / 2,
+             max(tail[0], base[0]) + sw / 2, max(tail[1], base[1]) + sw / 2, fill=INK)
+        px_, py_ = -dy, dx
+        dr.polygon([(ox + tip[0], oy + tip[1]),
+                    (ox + base[0] - px_ * halfw, oy + base[1] - py_ * halfw),
+                    (ox + base[0] + px_ * halfw, oy + base[1] + py_ * halfw)],
+                   fill=INK)
+        # 标签: 框外, 避开箭头(≤0.36cs)与线路端(≤0.56cs)
+        #   U/D 侧: 沿行进轴外推 0.86cs, 居中于格; L/R 侧: 外推 0.80cs 并向上让 0.28cs
+        f_lab2 = _font(0.50 * cs)
+        if s == "U":
+            lc = (cx(x), -0.86 * cs)
+        elif s == "D":
+            lc = (cx(x), h * cs + 0.86 * cs)
+        elif s == "L":
+            lc = (-0.80 * cs, cy(y) - 0.28 * cs)
+        else:
+            lc = (w * cs + 0.80 * cs, cy(y) - 0.28 * cs)
+        dr.text((ox + lc[0], oy + lc[1]), label, font=f_lab2, fill=INK, anchor="mm")
+
+    # ---- 9. 可选标题 ----
+    if title:
+        dr.text((ox, oy - 0.62 * cs), title, font=_font(0.42 * cs), fill=(90, 90, 90),
+                anchor="lm")
+
+    out = im.resize((max(1, int(round(W / scale))), max(1, int(round(H / scale)))),
+                    Image.LANCZOS)
+    return out
+
+
+def render_to_file(puz, path, out_png, cell=64, scale=4, title=""):
+    img = render_puzzle(puz, path=path, cell=cell, scale=scale, title=title)
+    img.save(out_png)
+    return img.size

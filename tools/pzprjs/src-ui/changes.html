@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html">
+
+<script type="text/javascript">
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      for(let registration of registrations) {
+        registration.unregister()
+      }
+    })
+  });
+}
+</script>
+
+<title>pzprjs changes</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0 0 0 16px;
+  }
+</style>
+</head>
+<body>
+<main>
+<div style="margin-bottom: 5px;"><b>Latest types</b> (<em><a href="/list.html" target="_parent">all types</a></em>)</div>
+<ul>
+  <li><a href="/p?heyajirimisaki" target="_parent">Heyajirimisaki へやジリみさき</a></li>
+  <li><a href="/p?jatahoku" target="_parent">JaTaHoKu</a></li>
+  <li><a href="/p?seiza" target="_parent">Seiza 星座になれたら</a></li>
+  <li><a href="/p?lring" target="_parent">L-Ring えるりんぐ</a></li>
+  <li><a href="/p?gravel" target="_parent">Gravel</a></li>
+  <li><a href="/p?scrabble" target="_parent">Scrabble</a></li>
+  <li><a href="/p?vertigo" target="_parent">Vertigo</a></li>
+</ul>
+</main>
+</body>

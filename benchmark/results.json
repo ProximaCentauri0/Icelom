@@ -1,0 +1,3187 @@
+[
+ {
+  "id": "db001_9x9_bachelor-seal",
+  "url": "https://puzz.link/p?icelom/a/9/9/4020hg8440gl0qg00m2g3g5zj1i4zz/3/13",
+  "source_name": "bachelor seal",
+  "source_url": "http://blog.livedoor.jp/bachelor_seal-puzzle/archives/91692649.html",
+  "published_at": "2026-09-05T18:00:06+00:00",
+  "w": 9,
+  "h": 9,
+  "n_numbers": 5,
+  "n_qmark": 0,
+  "n_ice": 16,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 1,
+  "solver_ms": 0.0,
+  "wall_ms": 22.0,
+  "first_sol_ms": 19.6,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 22.6,
+    "solver_ms": 1.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 20.8,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.0,
+    "solver_ms": 0.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 20.2,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.7,
+    "solver_ms": 1.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 19.6,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db002_8x8_bachelor-seal",
+  "url": "https://puzz.link/p?icelom/a/8/8/0gac0i0i0ck20g3v5k6h2t4x1h/3/12",
+  "source_name": "bachelor seal",
+  "source_url": "http://blog.livedoor.jp/bachelor_seal-puzzle/archives/91540487.html",
+  "published_at": "2026-07-14T18:00:25+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 6,
+  "n_qmark": 0,
+  "n_ice": 14,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 1,
+  "solver_ms": 0.0,
+  "wall_ms": 21.4,
+  "first_sol_ms": 19.5,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 21.4,
+    "solver_ms": 0.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 19.5,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.6,
+    "solver_ms": 1.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 21.1,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.9,
+    "solver_ms": 1.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 19.8,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db003_9x8_bachelor-seal",
+  "url": "https://puzz.link/p?icelom/a/9/8/00c08470a5098403h2p1n6r5v7p4m/2/14",
+  "source_name": "bachelor seal",
+  "source_url": "http://blog.livedoor.jp/bachelor_seal-puzzle/archives/91358664.html",
+  "published_at": "2026-05-11T18:00:36+00:00",
+  "w": 9,
+  "h": 8,
+  "n_numbers": 7,
+  "n_qmark": 0,
+  "n_ice": 15,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 22.5,
+  "first_sol_ms": 20.1,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 22.5,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.7,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.8,
+    "solver_ms": 1.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.1,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.0,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.8,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db004_8x8_bachelor-seal",
+  "url": "https://puzz.link/p?icelom/a/8/8/0048446v00g20z2h3h1s5h4z/1/12",
+  "source_name": "bachelor seal",
+  "source_url": "http://blog.livedoor.jp/bachelor_seal-puzzle/archives/91193106.html",
+  "published_at": "2026-03-14T18:00:46+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 5,
+  "n_qmark": 0,
+  "n_ice": 13,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 21.6,
+  "first_sol_ms": 19.6,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 22.0,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.9,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 24.2,
+    "solver_ms": 1.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 22.4,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.6,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.6,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db005_8x8_bachelor-seal",
+  "url": "https://puzz.link/p?icelom/a/8/8/4g31hs44qgb00n2h5y1j3z4l/3/12",
+  "source_name": "bachelor seal",
+  "source_url": "http://blog.livedoor.jp/bachelor_seal-puzzle/archives/91081308.html",
+  "published_at": "2026-01-29T18:00:59+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 5,
+  "n_qmark": 0,
+  "n_ice": 19,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 20.8,
+  "first_sol_ms": 19.3,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 23.5,
+    "solver_ms": 1.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.1,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.1,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.4,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.8,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.3,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db006_8x8_bachelor-seal",
+  "url": "https://puzz.link/p?icelom/a/8/8/0134q4i8m9h00k4h2m5n1zm3p/2/13",
+  "source_name": "bachelor seal",
+  "source_url": "http://blog.livedoor.jp/bachelor_seal-puzzle/archives/90906412.html",
+  "published_at": "2025-11-30T18:00:13+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 5,
+  "n_qmark": 0,
+  "n_ice": 18,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 21.0,
+  "first_sol_ms": 18.8,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 22.4,
+    "solver_ms": 1.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.6,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.4,
+    "solver_ms": 1.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.7,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.0,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.8,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db007_8x8_bachelor-seal",
+  "url": "https://puzz.link/p?icelom/a/8/8/o105s6i06o804q3i5v4i1h2zj/3/12",
+  "source_name": "bachelor seal",
+  "source_url": "http://blog.livedoor.jp/bachelor_seal-puzzle/archives/90765621.html",
+  "published_at": "2025-10-14T18:00:47+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 5,
+  "n_qmark": 0,
+  "n_ice": 18,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 21.2,
+  "first_sol_ms": 19.4,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 23.7,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.6,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.2,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.4,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.3,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.8,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db008_8x8_bachelor-seal",
+  "url": "https://puzz.link/p?icelom/a/8/8/00i3ppj77gi00j2i3zl1k5v4k/2/13",
+  "source_name": "bachelor seal",
+  "source_url": "http://blog.livedoor.jp/bachelor_seal-puzzle/archives/90646312.html",
+  "published_at": "2025-09-05T18:00:37+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 5,
+  "n_qmark": 0,
+  "n_ice": 22,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 1,
+  "solver_ms": 1.0,
+  "wall_ms": 21.9,
+  "first_sol_ms": 19.5,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 23.8,
+    "solver_ms": 0.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 21.9,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.9,
+    "solver_ms": 1.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 19.5,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.6,
+    "solver_ms": 1.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 19.8,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db009_8x8_bachelor-seal",
+  "url": "https://puzz.link/p?icelom/a/8/8/50m79h135oq18n2l5q3j4i1zm/3/12",
+  "source_name": "bachelor seal",
+  "source_url": "http://blog.livedoor.jp/bachelor_seal-puzzle/archives/90510050.html",
+  "published_at": "2025-07-17T18:00:58+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 5,
+  "n_qmark": 0,
+  "n_ice": 24,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 1,
+  "solver_ms": 1.0,
+  "wall_ms": 20.7,
+  "first_sol_ms": 19.2,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 23.1,
+    "solver_ms": 1.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 21.0,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.7,
+    "solver_ms": 1.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 19.2,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 24.9,
+    "solver_ms": 1.4,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 22.5,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db010_8x8_bachelor-seal",
+  "url": "https://puzz.link/p?icelom/a/8/8/0347892s2ph00m4h1k3q2zn5l/0/2",
+  "source_name": "bachelor seal",
+  "source_url": "http://blog.livedoor.jp/bachelor_seal-puzzle/archives/90395955.html",
+  "published_at": "2025-06-06T18:00:00+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 5,
+  "n_qmark": 0,
+  "n_ice": 19,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 21.7,
+  "first_sol_ms": 19.3,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 22.6,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.3,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.2,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.3,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.7,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.9,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db011_8x8_bachelor-seal",
+  "url": "https://puzz.link/p?icelom/a/8/8/0165kkiab8p00h2n5z4r1i3t/3/12",
+  "source_name": "bachelor seal",
+  "source_url": "http://blog.livedoor.jp/bachelor_seal-puzzle/archives/90267988.html",
+  "published_at": "2025-04-25T18:00:47+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 5,
+  "n_qmark": 0,
+  "n_ice": 20,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 21.5,
+  "first_sol_ms": 18.3,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 21.6,
+    "solver_ms": 1.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.1,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.5,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.3,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.1,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 21.4,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db012_8x8_bachelor-seal",
+  "url": "https://puzz.link/p?icelom/a/8/8/4e40040c4g004i6r3k7k5w4i2g1q/0/15",
+  "source_name": "bachelor seal",
+  "source_url": "http://blog.livedoor.jp/bachelor_seal-puzzle/archives/90152224.html",
+  "published_at": "2025-03-23T18:00:00+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 7,
+  "n_qmark": 0,
+  "n_ice": 11,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 18,
+  "solver_ms": 1.5,
+  "wall_ms": 20.7,
+  "first_sol_ms": 18.6,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 25.6,
+    "solver_ms": 2.0,
+    "nodes": 18,
+    "count": 1,
+    "first_sol_ms": 21.1,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 24.1,
+    "solver_ms": 1.5,
+    "nodes": 18,
+    "count": 1,
+    "first_sol_ms": 21.0,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.7,
+    "solver_ms": 1.5,
+    "nodes": 18,
+    "count": 1,
+    "first_sol_ms": 18.6,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db013_8x8_bachelor-seal",
+  "url": "https://puzz.link/p?icelom/a/8/8/00c3o03u4hd00j7i5u3g1i6s4x2/2/5",
+  "source_name": "bachelor seal",
+  "source_url": "http://blog.livedoor.jp/bachelor_seal-puzzle/archives/90060522.html",
+  "published_at": "2025-02-24T18:00:51+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 7,
+  "n_qmark": 0,
+  "n_ice": 18,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 20.3,
+  "first_sol_ms": 18.6,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 23.5,
+    "solver_ms": 1.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 21.5,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.3,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.6,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.9,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.4,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db014_8x8_bachelor-seal",
+  "url": "https://puzz.link/p?icelom/a/8/8/808101g020p00j1q3n5t4u2h6j/0/2",
+  "source_name": "bachelor seal",
+  "source_url": "http://blog.livedoor.jp/bachelor_seal-puzzle/archives/89956326.html",
+  "published_at": "2025-01-26T18:00:51+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 6,
+  "n_qmark": 0,
+  "n_ice": 9,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 20.7,
+  "first_sol_ms": 19.1,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 22.6,
+    "solver_ms": 1.1,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.7,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.9,
+    "solver_ms": 1.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.2,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.7,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.1,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db015_8x8_bachelor-seal",
+  "url": "https://puzz.link/p?icelom/a/8/8/hho4es0es8732m7j1k2k5n3k4k6x/1/14",
+  "source_name": "bachelor seal",
+  "source_url": "http://blog.livedoor.jp/bachelor_seal-puzzle/archives/89858135.html",
+  "published_at": "2024-12-31T18:00:09+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 7,
+  "n_qmark": 0,
+  "n_ice": 26,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 22.0,
+  "first_sol_ms": 20.1,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 22.8,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.7,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.0,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.1,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 25.5,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 23.3,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db016_9x9_dj-puzzles",
+  "url": "https://puzz.link/p?icelom/a/9/9/0000e080g10700000i3j9l4j1u5mau8j6l7j2i/1/16",
+  "source_name": "dj-puzzles",
+  "source_url": "https://dj-puzzles.blogspot.com/2023/02/puzzles-158-161-letter-themed-grids.html",
+  "published_at": "2023-02-25T20:25:00+00:00",
+  "w": 9,
+  "h": 9,
+  "n_numbers": 10,
+  "n_qmark": 0,
+  "n_ice": 9,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 20,
+  "solver_ms": 2.0,
+  "wall_ms": 23.4,
+  "first_sol_ms": 21.3,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 23.4,
+    "solver_ms": 2.0,
+    "nodes": 20,
+    "count": 1,
+    "first_sol_ms": 21.3,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 26.2,
+    "solver_ms": 3.0,
+    "nodes": 20,
+    "count": 1,
+    "first_sol_ms": 24.0,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.7,
+    "solver_ms": 2.0,
+    "nodes": 20,
+    "count": 1,
+    "first_sol_ms": 21.4,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db017_5x7_ericfox53",
+  "url": "https://puzz.link/p?icelom/a/5/7/ericfox",
+  "source_name": "EricFox53",
+  "source_url": "https://twitter.com/EricFox53/status/1566770280181420033",
+  "published_at": "2022-09-05T12:48:38+00:00",
+  "w": 5,
+  "h": 7,
+  "n_numbers": 0,
+  "n_qmark": 0,
+  "n_ice": 17,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 21.6,
+  "first_sol_ms": 18.5,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 21.7,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.5,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.6,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.8,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.8,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.6,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db018_9x4_takmu53",
+  "url": "https://puzz.link/p?icelom/a/9/4/takmu",
+  "source_name": "takmu53",
+  "source_url": "https://twitter.com/takmu53/status/1566769457464483841",
+  "published_at": "2022-09-05T12:45:22+00:00",
+  "w": 9,
+  "h": 4,
+  "n_numbers": 0,
+  "n_qmark": 0,
+  "n_ice": 15,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 21.9,
+  "first_sol_ms": 18.5,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 22.0,
+    "solver_ms": 1.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.5,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.1,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.4,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.9,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.7,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db019_10x10_bakpao-puz",
+  "url": "https://puzz.link/p?icelom/a/10/10/0gcc3cr2o0038r6o6610lcmapbl7p6j3h5j8p4l1p9m2l/28/35",
+  "source_name": "bakpao_puz",
+  "source_url": "https://twitter.com/bakpao_puz/status/1566725019731955713",
+  "published_at": "2022-09-05T09:48:47+00:00",
+  "w": 10,
+  "h": 10,
+  "n_numbers": 12,
+  "n_qmark": 0,
+  "n_ice": 32,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 43,
+  "solver_ms": 9.6,
+  "wall_ms": 29.1,
+  "first_sol_ms": 19.8,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 29.1,
+    "solver_ms": 9.6,
+    "nodes": 43,
+    "count": 1,
+    "first_sol_ms": 19.8,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 31.5,
+    "solver_ms": 7.7,
+    "nodes": 43,
+    "count": 1,
+    "first_sol_ms": 22.9,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 29.8,
+    "solver_ms": 7.0,
+    "nodes": 43,
+    "count": 1,
+    "first_sol_ms": 21.3,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db020_6x6_pawakun",
+  "url": "https://puzz.link/p?icelom/a/6/6/sudoku",
+  "source_name": "pawakun",
+  "source_url": "https://twitter.com/pawakun/status/1566523999579803648",
+  "published_at": "2022-09-04T20:30:00+00:00",
+  "w": 6,
+  "h": 6,
+  "n_numbers": 0,
+  "n_qmark": 0,
+  "n_ice": 18,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 21.2,
+  "first_sol_ms": 19.6,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 21.2,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.6,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.4,
+    "solver_ms": 1.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.5,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.9,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 21.0,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db021_12x4_pawakun",
+  "url": "https://puzz.link/p?icelom/a/12/4/yuzusoft",
+  "source_name": "pawakun",
+  "source_url": "https://twitter.com/pawakun/status/1566521767081848832",
+  "published_at": "2022-09-04T20:21:08+00:00",
+  "w": 12,
+  "h": 4,
+  "n_numbers": 0,
+  "n_qmark": 0,
+  "n_ice": 21,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 21.7,
+  "first_sol_ms": 19.5,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 21.7,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.8,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.2,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.5,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.2,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.5,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db022_4x6_atraingrooveryy",
+  "url": "https://puzz.link/p?icelom/a/4/6/AtrainGrooverYY",
+  "source_name": "AtrainGrooverYY",
+  "source_url": "https://twitter.com/AtrainGrooverYY/status/1566455536744550400",
+  "published_at": "2022-09-04T15:57:57+00:00",
+  "w": 4,
+  "h": 6,
+  "n_numbers": 0,
+  "n_qmark": 0,
+  "n_ice": 14,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 22.2,
+  "first_sol_ms": 20.5,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 22.2,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.7,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.4,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 21.4,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.2,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.5,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db023_6x7_udop",
+  "url": "https://puzz.link/p?icelom/a/6/7/arakihina",
+  "source_name": "udoP_",
+  "source_url": "https://twitter.com/udoP_/status/1566434698217541634",
+  "published_at": "2022-09-04T14:35:09+00:00",
+  "w": 6,
+  "h": 7,
+  "n_numbers": 0,
+  "n_qmark": 0,
+  "n_ice": 21,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 1.0,
+  "wall_ms": 21.9,
+  "first_sol_ms": 19.7,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 21.9,
+    "solver_ms": 1.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.7,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.8,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.9,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.9,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.9,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db024_4x6_chebunanntoka",
+  "url": "https://puzz.link/p?icelom/a/4/6/7638",
+  "source_name": "chebunanntoka",
+  "source_url": "https://twitter.com/chebunanntoka/status/1566408715406045189",
+  "published_at": "2022-09-04T12:51:54+00:00",
+  "w": 4,
+  "h": 6,
+  "n_numbers": 0,
+  "n_qmark": 0,
+  "n_ice": 8,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 19.7,
+  "first_sol_ms": 18.0,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 37.7,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 34.1,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.6,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.6,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 19.7,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.0,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db025_10x4_chebunanntoka",
+  "url": "https://puzz.link/p?icelom/a/10/4/broken",
+  "source_name": "chebunanntoka",
+  "source_url": "https://twitter.com/chebunanntoka/status/1566406365916336128",
+  "published_at": "2022-09-04T12:42:34+00:00",
+  "w": 10,
+  "h": 4,
+  "n_numbers": 0,
+  "n_qmark": 0,
+  "n_ice": 18,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 1.0,
+  "wall_ms": 20.0,
+  "first_sol_ms": 18.3,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 22.1,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.2,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.0,
+    "solver_ms": 1.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.3,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.8,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.0,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db026_10x6_chebunanntoka",
+  "url": "https://puzz.link/p?icelom/a/10/6/puzzlesquare",
+  "source_name": "chebunanntoka",
+  "source_url": "https://twitter.com/chebunanntoka/status/1566406072180809729",
+  "published_at": "2022-09-04T12:41:24+00:00",
+  "w": 10,
+  "h": 6,
+  "n_numbers": 0,
+  "n_qmark": 0,
+  "n_ice": 32,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 20.4,
+  "first_sol_ms": 18.7,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 20.5,
+    "solver_ms": 1.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.1,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.9,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 21.0,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.4,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.7,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db027_5x5_wand-125",
+  "url": "https://puzz.link/p?icelom/a/5/5/wand",
+  "source_name": "wand_125",
+  "source_url": "https://twitter.com/wand_125/status/1566382017570537473",
+  "published_at": "2022-09-04T11:05:49+00:00",
+  "w": 5,
+  "h": 5,
+  "n_numbers": 0,
+  "n_qmark": 0,
+  "n_ice": 9,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 20.9,
+  "first_sol_ms": 18.9,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 20.9,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.9,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.5,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.4,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.7,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.1,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db028_19x5_pancakepuzzles",
+  "url": "https://puzz.link/p?icelom/a/19/5/pulverizingpancake",
+  "source_name": "pancakepuzzles",
+  "source_url": "https://twitter.com/pancakepuzzles/status/1566113971140165632",
+  "published_at": "2022-09-03T17:20:42+00:00",
+  "w": 19,
+  "h": 5,
+  "n_numbers": 0,
+  "n_qmark": 0,
+  "n_ice": 49,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 1,
+  "solver_ms": 0.0,
+  "wall_ms": 19.2,
+  "first_sol_ms": 17.7,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 20.5,
+    "solver_ms": 0.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 18.9,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 19.2,
+    "solver_ms": 0.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 17.7,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.0,
+    "solver_ms": 0.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 21.0,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db029_11x11_menderbug",
+  "url": "https://puzz.link/p?icelom/a/11/11/sfoo5mpisi63h4uns87d94sm0zl1zh4zt2zq3j/20/21",
+  "source_name": "menderbug",
+  "source_url": "https://twitter.com/menderbug/status/1565076899906437120",
+  "published_at": "2022-08-31T20:39:45+00:00",
+  "w": 11,
+  "h": 11,
+  "n_numbers": 4,
+  "n_qmark": 0,
+  "n_ice": 60,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 2,
+  "solver_ms": 1.0,
+  "wall_ms": 20.6,
+  "first_sol_ms": 19.1,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 21.4,
+    "solver_ms": 1.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 19.6,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.6,
+    "solver_ms": 1.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 19.1,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 24.7,
+    "solver_ms": 2.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 22.8,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db030_7x7_takmu73",
+  "url": "https://puzz.link/p?icelom/a/7/7/80gl11a204p1l2l3l4l5p/3/10",
+  "source_name": "takmu73",
+  "source_url": "https://twitter.com/takmu73/status/1546841734680055810",
+  "published_at": "2022-07-12T12:59:43+00:00",
+  "w": 7,
+  "h": 7,
+  "n_numbers": 5,
+  "n_qmark": 0,
+  "n_ice": 11,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 2,
+  "solver_ms": 1.0,
+  "wall_ms": 19.6,
+  "first_sol_ms": 17.9,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 19.7,
+    "solver_ms": 0.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 17.9,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 19.6,
+    "solver_ms": 1.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 18.1,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.7,
+    "solver_ms": 0.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 18.8,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db031_6x6_jonnjonn69",
+  "url": "https://puzz.link/p?icelom/a/6/6/005pq000n34m12m5o/12/23",
+  "source_name": "jonnjonn69",
+  "source_url": "https://twitter.com/jonnjonn69/status/1543584865181765632",
+  "published_at": "2022-07-03T13:18:04+00:00",
+  "w": 6,
+  "h": 6,
+  "n_numbers": 5,
+  "n_qmark": 0,
+  "n_ice": 8,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 2,
+  "solver_ms": 0.0,
+  "wall_ms": 20.1,
+  "first_sol_ms": 18.4,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 21.0,
+    "solver_ms": 1.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 19.2,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.1,
+    "solver_ms": 0.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 18.4,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.3,
+    "solver_ms": 0.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 18.4,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db032_6x6_ericfox53",
+  "url": "https://puzz.link/p?icelom/a/6/6/03h08s00h3t12t4h/13/22",
+  "source_name": "EricFox53",
+  "source_url": "https://twitter.com/EricFox53/status/1506835340832624640",
+  "published_at": "2022-03-24T03:28:35+00:00",
+  "w": 6,
+  "h": 6,
+  "n_numbers": 4,
+  "n_qmark": 0,
+  "n_ice": 8,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 20.4,
+  "first_sol_ms": 18.3,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 20.4,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.3,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.5,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.9,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.0,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.5,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db033_8x8_bakpao-puz",
+  "url": "https://puzz.link/p?icelom/a/8/8/93cg6k641gg60r7k6j3o1s5p2h4h/1/17",
+  "source_name": "bakpao_puz",
+  "source_url": "https://twitter.com/bakpao_puz/status/1506025162419974144",
+  "published_at": "2022-03-21T21:49:13+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 7,
+  "n_qmark": 0,
+  "n_ice": 19,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 3,
+  "solver_ms": 1.5,
+  "wall_ms": 20.3,
+  "first_sol_ms": 18.3,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 21.2,
+    "solver_ms": 0.0,
+    "nodes": 3,
+    "count": 1,
+    "first_sol_ms": 19.1,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.6,
+    "solver_ms": 0.0,
+    "nodes": 3,
+    "count": 1,
+    "first_sol_ms": 18.6,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.3,
+    "solver_ms": 1.5,
+    "nodes": 3,
+    "count": 1,
+    "first_sol_ms": 18.3,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db034_10x7_pancakepuzzles",
+  "url": "https://puzz.link/p?icelom/a/10/7/007g4g4m7g0000z.h35n17t8k4h.n6h/24/7",
+  "source_name": "pancakepuzzles",
+  "source_url": "https://twitter.com/pancakepuzzles/status/1491532314316312576",
+  "published_at": "2022-02-09T21:59:49+00:00",
+  "w": 10,
+  "h": 7,
+  "n_numbers": 9,
+  "n_qmark": 2,
+  "n_ice": 14,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 3,
+  "solver_ms": 1.0,
+  "wall_ms": 20.2,
+  "first_sol_ms": 18.2,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 21.5,
+    "solver_ms": 1.1,
+    "nodes": 3,
+    "count": 1,
+    "first_sol_ms": 19.3,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.6,
+    "solver_ms": 1.0,
+    "nodes": 3,
+    "count": 1,
+    "first_sol_ms": 20.6,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.2,
+    "solver_ms": 1.0,
+    "nodes": 3,
+    "count": 1,
+    "first_sol_ms": 18.2,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db035_8x8_bakpao-puz",
+  "url": "https://puzz.link/p?icelom/a/8/8/01v44gi289v001l2r5zh6r4l3/27/19",
+  "source_name": "bakpao_puz",
+  "source_url": "https://twitter.com/bakpao_puz/status/1463908297849942028",
+  "published_at": "2021-11-25T16:31:50+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 6,
+  "n_qmark": 0,
+  "n_ice": 20,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 10,
+  "solver_ms": 1.0,
+  "wall_ms": 22.3,
+  "first_sol_ms": 20.0,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 23.4,
+    "solver_ms": 1.5,
+    "nodes": 10,
+    "count": 1,
+    "first_sol_ms": 20.7,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.3,
+    "solver_ms": 1.0,
+    "nodes": 10,
+    "count": 1,
+    "first_sol_ms": 20.0,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.3,
+    "solver_ms": 1.0,
+    "nodes": 10,
+    "count": 1,
+    "first_sol_ms": 20.4,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db036_9x9_qpinemarch323",
+  "url": "https://puzz.link/p?icelom/a/9/9/02i8kip0g9kih4k00h2x1g9gag3rbr8g4g7g6x5h/3/14",
+  "source_name": "qpinemarch323",
+  "source_url": "https://twitter.com/qpinemarch323/status/1425652038310846469",
+  "published_at": "2021-08-12T02:55:07+00:00",
+  "w": 9,
+  "h": 9,
+  "n_numbers": 11,
+  "n_qmark": 0,
+  "n_ice": 23,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 3,
+  "solver_ms": 1.5,
+  "wall_ms": 21.4,
+  "first_sol_ms": 19.0,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 21.5,
+    "solver_ms": 1.0,
+    "nodes": 3,
+    "count": 1,
+    "first_sol_ms": 19.0,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.4,
+    "solver_ms": 1.5,
+    "nodes": 3,
+    "count": 1,
+    "first_sol_ms": 19.4,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.8,
+    "solver_ms": 1.0,
+    "nodes": 3,
+    "count": 1,
+    "first_sol_ms": 19.8,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db037_12x13_bakpao-puz",
+  "url": "https://puzz.link/p?icelom/a/12/13/7v36dhhou4co63108c61j27hoor6cdm0ezzs9hdi6uabk7pck8o5jfu2p4g1h3m/36/49",
+  "source_name": "bakpao_puz",
+  "source_url": "https://twitter.com/bakpao_puz/status/1413619130209652744",
+  "published_at": "2021-07-09T22:00:39+00:00",
+  "w": 12,
+  "h": 13,
+  "n_numbers": 15,
+  "n_qmark": 0,
+  "n_ice": 68,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 2,
+  "solver_ms": 1.0,
+  "wall_ms": 21.9,
+  "first_sol_ms": 19.4,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 21.9,
+    "solver_ms": 1.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 19.4,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.9,
+    "solver_ms": 2.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 20.3,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.7,
+    "solver_ms": 1.5,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 20.9,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db038_9x9_xoned72",
+  "url": "https://puzz.link/p?icelom/a/9/9/40516bh4u60c0ohggi6o5m4o1m2o3zq/0/32",
+  "source_name": "xoned72",
+  "source_url": "https://twitter.com/xoned72/status/1413587715552071681",
+  "published_at": "2021-07-09T19:55:49+00:00",
+  "w": 9,
+  "h": 9,
+  "n_numbers": 6,
+  "n_qmark": 0,
+  "n_ice": 26,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 1,
+  "solver_ms": 1.0,
+  "wall_ms": 21.1,
+  "first_sol_ms": 19.3,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 23.0,
+    "solver_ms": 0.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 20.9,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.1,
+    "solver_ms": 1.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 19.3,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.2,
+    "solver_ms": 1.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 19.3,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db039_13x13_0vanillaice0",
+  "url": "http://pzv.jp/p.html?icelom/a/13/13/0000g49c0020251010118g0g00d4820000h-11y7zfzr5m.o.j.hbzp9i.g3ldv1k/19/36",
+  "source_name": "0vanillaice0",
+  "source_url": "https://twitter.com/0vanillaice0/status/1403660569723342848",
+  "published_at": "2021-06-12T10:28:53+00:00",
+  "w": 13,
+  "h": 13,
+  "n_numbers": 13,
+  "n_qmark": 4,
+  "n_ice": 23,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 3.0,
+  "wall_ms": 24.7,
+  "first_sol_ms": 22.1,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 24.7,
+    "solver_ms": 3.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 22.8,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 24.7,
+    "solver_ms": 2.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 22.1,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 27.6,
+    "solver_ms": 3.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 25.5,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db040_6x6_qpinemarch323",
+  "url": "https://puzz.link/p?icelom/a/6/6/fm82g810l1h3o2j4q/12/23",
+  "source_name": "qpinemarch323",
+  "source_url": "https://twitter.com/qpinemarch323/status/1395936268953948162",
+  "published_at": "2021-05-22T02:55:16+00:00",
+  "w": 6,
+  "h": 6,
+  "n_numbers": 4,
+  "n_qmark": 0,
+  "n_ice": 12,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 20.5,
+  "first_sol_ms": 18.6,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 23.4,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.4,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.4,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.5,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.5,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.6,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db041_6x6_qpinemarch323",
+  "url": "https://puzz.link/p?icelom/a/6/6/03i0cq00g3u24u1g/12/23",
+  "source_name": "qpinemarch323",
+  "source_url": "https://twitter.com/qpinemarch323/status/1395936268953948162",
+  "published_at": "2021-05-22T02:55:16+00:00",
+  "w": 6,
+  "h": 6,
+  "n_numbers": 4,
+  "n_qmark": 0,
+  "n_ice": 9,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 20.3,
+  "first_sol_ms": 18.8,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 20.3,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.8,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.0,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.8,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.3,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.3,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db042_10x10_qpinemarch323",
+  "url": "https://puzz.link/p?icelom/a/10/10/v1g0n0h0v00h0l0l0vgal3w2z4n5z6w1l/20/39",
+  "source_name": "qpinemarch323",
+  "source_url": "https://twitter.com/qpinemarch323/status/1389804629408456705",
+  "published_at": "2021-05-05T04:50:19+00:00",
+  "w": 10,
+  "h": 10,
+  "n_numbers": 6,
+  "n_qmark": 0,
+  "n_ice": 34,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 1.0,
+  "wall_ms": 21.1,
+  "first_sol_ms": 19.1,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 21.1,
+    "solver_ms": 1.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.1,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.9,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 21.9,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.5,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.8,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db043_8x8_kjry0",
+  "url": "https://puzz.link/p?icelom/a/8/8/aph8oghcc0dm4x15l42zu3/0/7",
+  "source_name": "KJRY0",
+  "source_url": "https://twitter.com/KJRY0/status/1350956162045374465",
+  "published_at": "2021-01-18T00:00:23+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 5,
+  "n_qmark": 0,
+  "n_ice": 24,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 1,
+  "solver_ms": 0.0,
+  "wall_ms": 21.0,
+  "first_sol_ms": 19.1,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 23.5,
+    "solver_ms": 1.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 20.6,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.0,
+    "solver_ms": 0.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 19.1,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.7,
+    "solver_ms": 0.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 19.8,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db045_14x14_nu-n-notami",
+  "url": "https://puzz.link/p?icelom/a/14/14/v1vs1vg1u01o0100000800000801o07o0vo3vofgzzzzp1s2zzzzq/6/7",
+  "source_name": "nu_n_notami",
+  "source_url": "https://twitter.com/nu_n_notami/status/1325292344384475137",
+  "published_at": "2020-11-08T04:21:32+00:00",
+  "w": 14,
+  "h": 14,
+  "n_numbers": 2,
+  "n_qmark": 0,
+  "n_ice": 61,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 6,
+  "solver_ms": 1.0,
+  "wall_ms": 21.7,
+  "first_sol_ms": 18.7,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 21.7,
+    "solver_ms": 1.0,
+    "nodes": 6,
+    "count": 1,
+    "first_sol_ms": 18.7,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.1,
+    "solver_ms": 1.0,
+    "nodes": 6,
+    "count": 1,
+    "first_sol_ms": 21.3,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.1,
+    "solver_ms": 2.0,
+    "nodes": 6,
+    "count": 1,
+    "first_sol_ms": 20.0,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db046_6x6_ihnnpuzzles",
+  "url": "https://puzz.link/p?icelom/a/6/6/0i0904g0h3i1n2i4v/16/19",
+  "source_name": "ihnnpuzzles",
+  "source_url": "https://ihnnpuzzles.blogspot.com/2020/10/puzzles-240-241-242-capricorn-icelom.html",
+  "published_at": "2020-10-28T21:00:00+00:00",
+  "w": 6,
+  "h": 6,
+  "n_numbers": 4,
+  "n_qmark": 0,
+  "n_ice": 6,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 2,
+  "solver_ms": 0.5,
+  "wall_ms": 20.0,
+  "first_sol_ms": 18.2,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 22.1,
+    "solver_ms": 0.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 20.0,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.6,
+    "solver_ms": 0.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 18.9,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.0,
+    "solver_ms": 0.5,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 18.2,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db047_8x8_ihnnpuzzles",
+  "url": "https://puzz.link/p?icelom/a/8/8/m144gii50k530w4m2r3m1w/1/12",
+  "source_name": "ihnnpuzzles",
+  "source_url": "https://ihnnpuzzles.blogspot.com/2020/10/puzzles-240-241-242-capricorn-icelom.html",
+  "published_at": "2020-10-28T21:00:00+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 4,
+  "n_qmark": 0,
+  "n_ice": 19,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 2,
+  "solver_ms": 0.0,
+  "wall_ms": 21.2,
+  "first_sol_ms": 18.9,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 21.3,
+    "solver_ms": 1.5,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 18.9,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.5,
+    "solver_ms": 0.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 21.7,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.2,
+    "solver_ms": 0.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 19.2,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db048_11x9_ihnnpuzzles",
+  "url": "https://puzz.link/p?icelom/a/11/9/vge000g8000042000s3un6l5v7g4kaw3k8g2v9l1n/24/37",
+  "source_name": "ihnnpuzzles",
+  "source_url": "https://ihnnpuzzles.blogspot.com/2020/10/puzzles-240-241-242-capricorn-icelom.html",
+  "published_at": "2020-10-28T21:00:00+00:00",
+  "w": 11,
+  "h": 9,
+  "n_numbers": 10,
+  "n_qmark": 0,
+  "n_ice": 22,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 2092,
+  "solver_ms": 206.1,
+  "wall_ms": 226.1,
+  "first_sol_ms": 121.4,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 226.1,
+    "solver_ms": 206.1,
+    "nodes": 2092,
+    "count": 1,
+    "first_sol_ms": 121.4,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 233.1,
+    "solver_ms": 211.9,
+    "nodes": 2092,
+    "count": 1,
+    "first_sol_ms": 127.7,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 226.6,
+    "solver_ms": 205.2,
+    "nodes": 2092,
+    "count": 1,
+    "first_sol_ms": 123.1,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db049_9x9_tckmn",
+  "url": "https://puzz.link/p?icelom/a/9/9/108g00410881gg000p1h8o6sar4g5p2j39p7/20/6",
+  "source_name": "tckmn",
+  "source_url": "https://tck.mn/puzzle/logic/20",
+  "published_at": "2020-09-01T00:00:00+00:00",
+  "w": 9,
+  "h": 9,
+  "n_numbers": 10,
+  "n_qmark": 0,
+  "n_ice": 10,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 66,
+  "solver_ms": 8.3,
+  "wall_ms": 28.3,
+  "first_sol_ms": 23.7,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 30.1,
+    "solver_ms": 8.1,
+    "nodes": 66,
+    "count": 1,
+    "first_sol_ms": 25.7,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 28.7,
+    "solver_ms": 7.5,
+    "nodes": 66,
+    "count": 1,
+    "first_sol_ms": 24.3,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 28.3,
+    "solver_ms": 8.3,
+    "nodes": 66,
+    "count": 1,
+    "first_sol_ms": 23.7,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db052_6x6_qpinemarch323",
+  "url": "http://pzv.jp/p.html?icelom/a/6/6/1ma00c20l1i4h3l5i2j6l/0/11",
+  "source_name": "qpinemarch323",
+  "source_url": "https://twitter.com/qpinemarch323/status/1230489976489398272",
+  "published_at": "2020-02-20T13:50:46+00:00",
+  "w": 6,
+  "h": 6,
+  "n_numbers": 6,
+  "n_qmark": 0,
+  "n_ice": 9,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 20.7,
+  "first_sol_ms": 19.0,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 22.4,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.7,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.7,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.0,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.3,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 21.3,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db053_5x5_qpinemarch323",
+  "url": "http://pzv.jp/p.html?icelom/a/5/5/ggl11h3h1s5g24h/0/9",
+  "source_name": "qpinemarch323",
+  "source_url": "https://twitter.com/qpinemarch323/status/1230317176294240256",
+  "published_at": "2020-02-20T02:24:07+00:00",
+  "w": 5,
+  "h": 5,
+  "n_numbers": 5,
+  "n_qmark": 0,
+  "n_ice": 7,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 20.1,
+  "first_sol_ms": 17.2,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 20.3,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.3,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.8,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.8,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.1,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 17.2,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db054_8x8_potechi1104",
+  "url": "https://puzz.link/p?icelom/a/8/8/50im4200ie2m8g3i8h1i5l2j4h6zr7i/0/7",
+  "source_name": "potechi1104",
+  "source_url": "https://twitter.com/potechi1104/status/1222418601115734017",
+  "published_at": "2020-01-29T07:18:00+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 8,
+  "n_qmark": 0,
+  "n_ice": 19,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 19.3,
+  "first_sol_ms": 17.5,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 21.3,
+    "solver_ms": 1.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.6,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.5,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.5,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 19.3,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 17.5,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db055_6x6_daikichi-3141",
+  "url": "http://pzv.jp/p.html?icelom/a/6/6/fu7ghoc0g1m3m4g2m5n/1/0",
+  "source_name": "Daikichi_3141",
+  "source_url": "https://twitter.com/Daikichi_3141/status/1218787916433899520",
+  "published_at": "2020-01-19T06:50:57+00:00",
+  "w": 6,
+  "h": 6,
+  "n_numbers": 5,
+  "n_qmark": 0,
+  "n_ice": 18,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 1.0,
+  "wall_ms": 19.4,
+  "first_sol_ms": 17.5,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 20.3,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 17.5,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.9,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.9,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 19.4,
+    "solver_ms": 1.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 17.7,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db056_9x13_0vanillaice0",
+  "url": "http://pzv.jp/p.html?icelom/a/9/13/00tpa0n1a2s01rgl7e2kto00jaw5t4w7g6g3g8t1zw2g9/1/36",
+  "source_name": "0vanillaice0",
+  "source_url": "https://twitter.com/0vanillaice0/status/1201071412099735554",
+  "published_at": "2019-12-01T09:31:54+00:00",
+  "w": 9,
+  "h": 13,
+  "n_numbers": 10,
+  "n_qmark": 0,
+  "n_ice": 44,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 9,
+  "solver_ms": 3.0,
+  "wall_ms": 22.8,
+  "first_sol_ms": 19.8,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 27.1,
+    "solver_ms": 4.0,
+    "nodes": 9,
+    "count": 1,
+    "first_sol_ms": 22.2,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.8,
+    "solver_ms": 3.0,
+    "nodes": 9,
+    "count": 1,
+    "first_sol_ms": 19.8,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 25.4,
+    "solver_ms": 3.5,
+    "nodes": 9,
+    "count": 1,
+    "first_sol_ms": 21.0,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db057_6x6_3892myamya",
+  "url": "http://pzv.jp/p.html?icelom/a/6/6/c4gpd400j2s1p3h4i/5/17",
+  "source_name": "3892myamya",
+  "source_url": "https://twitter.com/3892myamya/status/1165267216536764416",
+  "published_at": "2019-08-24T14:18:48+00:00",
+  "w": 6,
+  "h": 6,
+  "n_numbers": 4,
+  "n_qmark": 0,
+  "n_ice": 11,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 2,
+  "solver_ms": 0.0,
+  "wall_ms": 20.8,
+  "first_sol_ms": 18.3,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 20.9,
+    "solver_ms": 0.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 19.0,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.3,
+    "solver_ms": 0.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 19.0,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.8,
+    "solver_ms": 0.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 18.3,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db058_8x8_hotatenohontate",
+  "url": "http://pzv.jp/p.html?icelom/a/8/8/28pv83g0cpj7sn5u7o6g4m2h38l1n/23/4",
+  "source_name": "hotatenohontate",
+  "source_url": "https://twitter.com/hotatenohontate/status/805040372992749569",
+  "published_at": "2016-12-03T13:25:56+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 8,
+  "n_qmark": 0,
+  "n_ice": 28,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 1.0,
+  "wall_ms": 20.3,
+  "first_sol_ms": 18.6,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 22.1,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.3,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.3,
+    "solver_ms": 1.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.6,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.6,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.6,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db059_8x8_usbe-puz",
+  "url": "http://pzv.jp/p.html?icelom/a/8/8/01v54oj289v00j3i2o4n1v57h6u/0/27",
+  "source_name": "USBe_puz",
+  "source_url": "https://twitter.com/USBe_puz/status/805033320442523650",
+  "published_at": "2016-12-03T12:57:55+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 7,
+  "n_qmark": 0,
+  "n_ice": 23,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 3,
+  "solver_ms": 1.0,
+  "wall_ms": 20.0,
+  "first_sol_ms": 17.7,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 20.0,
+    "solver_ms": 1.0,
+    "nodes": 3,
+    "count": 1,
+    "first_sol_ms": 17.7,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.0,
+    "solver_ms": 1.0,
+    "nodes": 3,
+    "count": 1,
+    "first_sol_ms": 19.1,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.6,
+    "solver_ms": 1.0,
+    "nodes": 3,
+    "count": 1,
+    "first_sol_ms": 19.0,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db060_9x9_kiiroipazuru-blog-fc2-com",
+  "url": "http://pzv.jp/p.html?icelom/a/9/9/00vp0it5abkg9vg00h9g5zg4lah1i8r7h2h6q3o/1/31",
+  "source_name": "http://kiiroipazuru.blog.fc2.com",
+  "source_url": "http://kiiroipazuru.blog.fc2.com/blog-entry-73.html",
+  "published_at": "2010-01-01T00:00:00+00:00",
+  "w": 9,
+  "h": 9,
+  "n_numbers": 10,
+  "n_qmark": 0,
+  "n_ice": 32,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 4,
+  "solver_ms": 1.0,
+  "wall_ms": 23.5,
+  "first_sol_ms": 20.4,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 23.6,
+    "solver_ms": 0.5,
+    "nodes": 4,
+    "count": 1,
+    "first_sol_ms": 20.5,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.5,
+    "solver_ms": 1.0,
+    "nodes": 4,
+    "count": 1,
+    "first_sol_ms": 21.4,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.9,
+    "solver_ms": 1.0,
+    "nodes": 4,
+    "count": 1,
+    "first_sol_ms": 20.4,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db061_6x6_kiiroipazuru-blog-fc2-com",
+  "url": "http://pzv.jp/p.html?icelom/a/6/6/07i9sif0zv/18/22",
+  "source_name": "http://kiiroipazuru.blog.fc2.com",
+  "source_url": "http://kiiroipazuru.blog.fc2.com/blog-entry-72.html",
+  "published_at": "2010-01-01T00:00:00+00:00",
+  "w": 6,
+  "h": 6,
+  "n_numbers": 0,
+  "n_qmark": 0,
+  "n_ice": 16,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 19.6,
+  "first_sol_ms": 17.6,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 20.2,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.4,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.2,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.6,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 19.6,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 17.6,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db062_6x6_kiiroipazuru-blog-fc2-com",
+  "url": "http://pzv.jp/p.html?icelom/a/6/6/44q05i20g1u4n3j2j/5/8",
+  "source_name": "http://kiiroipazuru.blog.fc2.com",
+  "source_url": "http://kiiroipazuru.blog.fc2.com/blog-entry-71.html",
+  "published_at": "2010-01-01T00:00:00+00:00",
+  "w": 6,
+  "h": 6,
+  "n_numbers": 4,
+  "n_qmark": 0,
+  "n_ice": 10,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 20.1,
+  "first_sol_ms": 18.3,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 22.4,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.5,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.3,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.4,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.1,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 18.3,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db063_8x8_puzzleblog542-blog-fc2-com",
+  "url": "http://pzv.jp/p.html?icelom/a/8/8/0000000000000n2y5r4i3q1l/0/8",
+  "source_name": "http://puzzleblog542.blog.fc2.com",
+  "source_url": "http://puzzleblog542.blog.fc2.com/blog-entry-683.html",
+  "published_at": "2010-01-01T00:00:00+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 5,
+  "n_qmark": 0,
+  "n_ice": 0,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 19.4,
+  "first_sol_ms": 17.8,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 19.4,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 17.8,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.2,
+    "solver_ms": 1.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 20.2,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.2,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.4,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db064_8x8_puzzleblog542-blog-fc2-com",
+  "url": "http://pzv.jp/p.html?icelom/a/8/8/01j6c60ocpj00i7g3k1j2o8q4g6q5q/0/1",
+  "source_name": "http://puzzleblog542.blog.fc2.com",
+  "source_url": "http://puzzleblog542.blog.fc2.com/blog-entry-365.html",
+  "published_at": "2010-01-01T00:00:00+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 8,
+  "n_qmark": 0,
+  "n_ice": 20,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 1,
+  "solver_ms": 1.0,
+  "wall_ms": 21.3,
+  "first_sol_ms": 18.8,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 21.7,
+    "solver_ms": 1.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 19.8,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.3,
+    "solver_ms": 1.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 18.8,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.3,
+    "solver_ms": 0.0,
+    "nodes": 1,
+    "count": 1,
+    "first_sol_ms": 21.0,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db065_8x8_puzzleblog542-blog-fc2-com",
+  "url": "http://pzv.jp/p.html?icelom/a/8/8/01a2kl1aagl00h8h2q9n7i6g1o4s3g5k/0/1",
+  "source_name": "http://puzzleblog542.blog.fc2.com",
+  "source_url": "http://puzzleblog542.blog.fc2.com/blog-entry-323.html",
+  "published_at": "2010-01-01T00:00:00+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 9,
+  "n_qmark": 0,
+  "n_ice": 18,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 2,
+  "solver_ms": 1.0,
+  "wall_ms": 22.2,
+  "first_sol_ms": 19.9,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 22.2,
+    "solver_ms": 1.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 19.9,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.9,
+    "solver_ms": 1.0,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 21.5,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 22.7,
+    "solver_ms": 1.5,
+    "nodes": 2,
+    "count": 1,
+    "first_sol_ms": 20.1,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db066_8x8_puzzleblog542-blog-fc2-com",
+  "url": "http://pzv.jp/p.html?icelom/a/8/8/3bh3d1d1dh3lgg3i7z4g5n6z2i1g/0/15",
+  "source_name": "http://puzzleblog542.blog.fc2.com",
+  "source_url": "http://puzzleblog542.blog.fc2.com/blog-entry-354.html",
+  "published_at": "2010-01-01T00:00:00+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 7,
+  "n_qmark": 0,
+  "n_ice": 28,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 21.3,
+  "first_sol_ms": 19.0,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 22.3,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.7,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.3,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.0,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.7,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.7,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db067_8x8_puzzleblog542-blog-fc2-com",
+  "url": "http://pzv.jp/p.html?icelom/a/8/8/8003kl1abhd04v4l2q5p1l3p/2/6",
+  "source_name": "http://puzzleblog542.blog.fc2.com",
+  "source_url": "http://puzzleblog542.blog.fc2.com/?no=310",
+  "published_at": "2010-01-01T00:00:00+00:00",
+  "w": 8,
+  "h": 8,
+  "n_numbers": 5,
+  "n_qmark": 0,
+  "n_ice": 20,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 4,
+  "solver_ms": 1.0,
+  "wall_ms": 20.0,
+  "first_sol_ms": 18.3,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 21.3,
+    "solver_ms": 1.5,
+    "nodes": 4,
+    "count": 1,
+    "first_sol_ms": 18.8,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.2,
+    "solver_ms": 0.0,
+    "nodes": 4,
+    "count": 1,
+    "first_sol_ms": 19.3,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 20.0,
+    "solver_ms": 1.0,
+    "nodes": 4,
+    "count": 1,
+    "first_sol_ms": 18.3,
+    "status": "solved"
+   }
+  ]
+ },
+ {
+  "id": "db068_6x6_puzzleblog542-blog-fc2-com",
+  "url": "http://pzv.jp/p.html?icelom/a/6/6/06090600g1r2w3i/16/2",
+  "source_name": "http://puzzleblog542.blog.fc2.com",
+  "source_url": "http://puzzleblog542.blog.fc2.com/blog-date-201404-6.html",
+  "published_at": "2010-01-01T00:00:00+00:00",
+  "w": 6,
+  "h": 6,
+  "n_numbers": 3,
+  "n_qmark": 0,
+  "n_ice": 6,
+  "n_edges": 0,
+  "status": "solved",
+  "solutions": 1,
+  "nodes": 0,
+  "solver_ms": 0.0,
+  "wall_ms": 21.7,
+  "first_sol_ms": 19.8,
+  "reason": null,
+  "error_msg": null,
+  "verify_checked": 1,
+  "verify_errors": [],
+  "runs": [
+   {
+    "wall_ms": 22.7,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.9,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 23.5,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 21.4,
+    "status": "solved"
+   },
+   {
+    "wall_ms": 21.7,
+    "solver_ms": 0.0,
+    "nodes": 0,
+    "count": 1,
+    "first_sol_ms": 19.8,
+    "status": "solved"
+   }
+  ]
+ }
+]

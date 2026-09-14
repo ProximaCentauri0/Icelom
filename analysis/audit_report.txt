@@ -1,0 +1,65 @@
+db001_9x9_bachelor-seal.json | 1 | 0 | indep-timeout | timeout (steps=968704) | 0.0
+db002_8x8_bachelor-seal.json | 1 | 0 | AGREE | solution-found | 0.0
+db003_9x8_bachelor-seal.json | 1 | 0 | AGREE | solution-found | 0.0
+db004_8x8_bachelor-seal.json | 1 | 0 | AGREE | solution-found | 1.0
+db005_8x8_bachelor-seal.json | 1 | 0 | AGREE | solution-found | 1.0
+db006_8x8_bachelor-seal.json | 1 | 0 | AGREE | solution-found | 0.0
+db007_8x8_bachelor-seal.json | 1 | 0 | AGREE | solution-found | 0.0
+db008_8x8_bachelor-seal.json | 1 | 0 | AGREE | solution-found | 0.0
+db009_8x8_bachelor-seal.json | 1 | 0 | AGREE | solution-found | 0.0
+db010_8x8_bachelor-seal.json | 1 | 0 | AGREE | solution-found | 0.0
+db011_8x8_bachelor-seal.json | 1 | 0 | AGREE | solution-found | 1.0
+db012_8x8_bachelor-seal.json | 1 | 0 | AGREE | solution-found | 1.5
+db013_8x8_bachelor-seal.json | 1 | 0 | AGREE | solution-found | 1.0
+db014_8x8_bachelor-seal.json | 1 | 0 | AGREE | solution-found | 0.0
+db015_8x8_bachelor-seal.json | 1 | 0 | AGREE | solution-found | 0.0
+db016_9x9_dj-puzzles.json | 1 | 0 | AGREE | solution-found | 2.0
+db017_5x7_ericfox53.json | 1 | 0 | AGREE | solution-found | 1.5
+db018_9x4_takmu53.json | 1 | 0 | skip | ice-OUT unsupported by independent checker | 0.0
+db019_10x10_bakpao-puz.json | 1 | 0 | skip | ice-OUT unsupported by independent checker | 7.5
+db020_6x6_pawakun.json | 1 | 0 | skip | ice-OUT unsupported by independent checker | 0.0
+db021_12x4_pawakun.json | 1 | 0 | AGREE | solution-found | 0.0
+db022_4x6_atraingrooveryy.json | 1 | 0 | AGREE | solution-found | 0.0
+db023_6x7_udop.json | 1 | 0 | AGREE | solution-found | 0.0
+db024_4x6_chebunanntoka.json | 1 | 0 | AGREE | solution-found | 0.0
+db025_10x4_chebunanntoka.json | 1 | 0 | AGREE | solution-found | 0.0
+db026_10x6_chebunanntoka.json | 1 | 0 | skip | ice-OUT unsupported by independent checker | 0.0
+db027_5x5_wand-125.json | 1 | 0 | AGREE | solution-found | 0.0
+db028_19x5_pancakepuzzles.json | 1 | 0 | skip | ice-OUT unsupported by independent checker | 0.0
+db029_11x11_menderbug.json | 1 | 0 | AGREE | solution-found | 1.1
+db030_7x7_takmu73.json | 1 | 0 | AGREE | solution-found | 0.0
+db031_6x6_jonnjonn69.json | 1 | 0 | AGREE | solution-found | 0.5
+db032_6x6_ericfox53.json | 1 | 0 | AGREE | solution-found | 0.0
+db033_8x8_bakpao-puz.json | 1 | 0 | skip | ice-OUT unsupported by independent checker | 1.0
+db034_10x7_pancakepuzzles.json | 1 | 0 | AGREE | solution-found | 1.0
+db035_8x8_bakpao-puz.json | 1 | 0 | AGREE | solution-found | 2.0
+db036_9x9_qpinemarch323.json | 1 | 0 | AGREE | solution-found | 1.0
+db037_12x13_bakpao-puz.json | 1 | 0 | AGREE | solution-found | 2.0
+db038_9x9_xoned72.json | 1 | 0 | AGREE | solution-found | 0.0
+db039_13x13_0vanillaice0.json | 1 | 0 | indep-timeout | timeout (steps=335872) | 2.0
+db040_6x6_qpinemarch323.json | 1 | 0 | AGREE | solution-found | 0.0
+db041_6x6_qpinemarch323.json | 1 | 0 | AGREE | solution-found | 0.0
+db042_10x10_qpinemarch323.json | 1 | 0 | AGREE | solution-found | 0.0
+db043_8x8_kjry0.json | 1 | 0 | AGREE | solution-found | 0.0
+db045_14x14_nu-n-notami.json | 1 | 0 | indep-timeout | timeout (steps=720896) | 1.0
+db046_6x6_ihnnpuzzles.json | 1 | 0 | AGREE | solution-found | 1.0
+db047_8x8_ihnnpuzzles.json | 1 | 0 | AGREE | solution-found | 1.0
+db048_11x9_ihnnpuzzles.json | 1 | 0 | AGREE | solution-found | 212.9
+db049_9x9_tckmn.json | 1 | 0 | AGREE | solution-found | 8.5
+db052_6x6_qpinemarch323.json | 1 | 0 | AGREE | solution-found | 0.0
+db053_5x5_qpinemarch323.json | 1 | 0 | skip | ice-OUT unsupported by independent checker | 0.0
+db054_8x8_potechi1104.json | 1 | 0 | AGREE | solution-found | 0.0
+db055_6x6_daikichi-3141.json | 1 | 0 | AGREE | solution-found | 0.0
+db056_9x13_0vanillaice0.json | 1 | 0 | AGREE | solution-found | 4.0
+db057_6x6_3892myamya.json | 1 | 0 | AGREE | solution-found | 1.0
+db058_8x8_hotatenohontate.json | 1 | 0 | AGREE | solution-found | 1.1
+db059_8x8_usbe-puz.json | 1 | 0 | AGREE | solution-found | 0.0
+db060_9x9_kiiroipazuru-blog-fc2-com.json | 1 | 0 | AGREE | solution-found | 1.0
+db061_6x6_kiiroipazuru-blog-fc2-com.json | 1 | 0 | AGREE | solution-found | 0.0
+db062_6x6_kiiroipazuru-blog-fc2-com.json | 1 | 0 | AGREE | solution-found | 1.0
+db063_8x8_puzzleblog542-blog-fc2-com.json | 1 | 0 | AGREE | solution-found | 0.5
+db064_8x8_puzzleblog542-blog-fc2-com.json | 1 | 0 | AGREE | solution-found | 1.0
+db065_8x8_puzzleblog542-blog-fc2-com.json | 1 | 0 | AGREE | solution-found | 0.0
+db066_8x8_puzzleblog542-blog-fc2-com.json | 1 | 0 | AGREE | solution-found | 1.5
+db067_8x8_puzzleblog542-blog-fc2-com.json | 1 | 0 | AGREE | solution-found | 1.0
+db068_6x6_puzzleblog542-blog-fc2-com.json | 1 | 0 | AGREE | solution-found | 0.0

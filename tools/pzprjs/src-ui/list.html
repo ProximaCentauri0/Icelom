@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META CHARSET="utf-8">
+<meta http-equiv="Content-Type" content="text/html">
+<TITLE>puzz.link list of puzzle types</TITLE>
+<link rel="stylesheet" href="./css/list.css?<%= git.hash %>">
+<script src="./js/pzpr.js?<%= git.hash %>"></script>
+<script src="./js/list.js?<%= git.hash %>"></script>
+</HEAD>
+<BODY>
+
+<div class=main id=main>
+
+<h2 id="title"><span lang="ja">パズルの種類のリスト</span><span lang="en">List of puzzle types</span></h2>
+
+<div id="design1">
+
+  <menu class="selector" id="puzmenu">
+    <li class="puzmenusel" id='puzsort_none' data-sort='none'>
+      <span lang="ja">日付順</span><span lang="en">Sort by date</span>
+    </li><li class="puzmenu" id='puzsort_alpha' data-sort='alpha'>
+      <span lang="ja">アルファベット順</span><span lang="en">Sort alphabetically</span>
+   </menu>
+
+<br clear="all">
+
+<div class="puztable" id="table_all">
+ <div class='container'>
+  <div class="lists blocks">
+   <b lang="ja">黒マス配置系</b>
+   <b lang="en">Shading Puzzles</b>
+   <ul>
+    <li data-pid="nurikabe"></li>
+    <li data-pid="box"></li>
+    <li data-pid="creek"></li>
+    <li data-pid="mochikoro"></li>
+    <li data-pid="tasquare"></li>
+    <li data-pid="kurotto"></li>
+    <li data-pid="nuribou"></li>
+    <li data-pid="tawa"></li>
+    <li data-pid="lookair"></li>
+    <li data-pid="mochinyoro"></li>
+    <li data-pid="tapa"></li>
+    <li data-pid="cave"></li>
+    <li data-pid="nurimisaki"></li>
+    <li data-pid="snake"></li>
+    <li data-pid="nonogram"></li>
+    <li data-pid="interbd"></li>
+    <li data-pid="aqre"></li>
+    <li data-pid="chainedb"></li>
+    <li data-pid="canal"></li>
+    <li data-pid="cbanana"></li>
+    <li data-pid="coral"></li>
+    <li data-pid="nuriuzu"></li>
+    <li data-pid="ququ"></li>
+    <li data-pid="cts"></li>
+    <li data-pid="dominion"></li>
+    <li data-pid="lightshadow"></li>
+    <li data-pid="norinuri"></li>
+    <li data-pid="circlesquare"></li>
+    <li data-pid="tetrochain"></li>
+    <li data-pid="mrtile"></li>
+    <li data-pid="batten"></li>
+    <li data-pid="snakeegg"></li>
+    <li data-pid="archipelago"></li>
+    <li data-pid="nibunnogo"></li>
+    <li data-pid="island"></li>
+    <li data-pid="isowatari"></li>
+    <li data-pid="cityspace"></li>
+    <li data-pid="sashikabe"></li>
+    <li data-pid="tetrochaink"></li>
+    <li data-pid="sansaroad"></li>
+    <li data-pid="cornerch"></li>
+    <li data-pid="hasunomura"></li>
+    <li data-pid="landmeasure"></li>
+   </ul>
+  </div>
+  <div class="lists blocks">
+   <b lang="ja">領域＋黒マス系</b>
+   <b lang="en">Areas and Shading Puzzles</b>
+   <ul>
+    <li data-pid="tilepaint"></li>
+    <li data-pid="norinori"></li>
+    <li data-pid="nurimaze"></li>
+    <li data-pid="lits"></li>
+    <li data-pid="invlitso"></li>
+    <li data-pid="shimaguni"></li>
+    <li data-pid="stostone"></li>
+    <li data-pid="paintarea"></li>
+    <li data-pid="chocona"></li>
+    <li data-pid="aquarium"></li>
+    <li data-pid="parquet"></li>
+    <li data-pid="hinge"></li>
+    <li data-pid="heyablock"></li>
+    <li data-pid="cocktail"></li>
+    <li data-pid="kuroclone"></li>
+    <li data-pid="martini"></li>
+    <li data-pid="patchwork"></li>
+    <li data-pid="mannequin"></li>
+    <li data-pid="kuromenbun"></li>
+    <li data-pid="tilecity"></li>
+    <li data-pid="nuritwin"></li>
+    <li data-pid="marutaring"></li>
+    <li data-pid="tetroctb"></li>
+    <li data-pid="bramble"></li>
+    <li data-pid="disco"></li>
+    <li data-pid="anymino"></li>
+   </ul>
+  </div>
+  <div class="lists blocks">
+   <b lang="ja">連黒分断禁系</b>
+   <b lang="en">No Adjacent, No Divide</b>
+   <ul>
+    <li data-pid="heyawake"></li>
+    <li data-pid="hitori"></li>
+    <li data-pid="kurodoko"></li>
+    <li data-pid="usoone"></li>
+    <li data-pid="yajikazu"></li>
+    <li data-pid="kurochute"></li>
+    <li data-pid="ayeheya"></li>
+    <li data-pid="oneroom"></li>
+    <li data-pid="nothree"></li>
+    <li data-pid="context"></li>
+    <li data-pid="akichi"></li>
+    <li data-pid="guidearrow"></li>
+    <li data-pid="aquapelago"></li>
+    <li data-pid="teri"></li>
+    <li data-pid="curving"></li>
+    <li data-pid="smullyan"></li>
+    <li data-pid="outofsight"></li>
+    <li data-pid="sumiwake"></li>
+    <li data-pid="oasis"></li>
+    <li data-pid="yokeimoji"></li>
+   </ul>
+  </div>
+  <div class="lists loops">
+   <b lang="ja">ループ系</b>
+   <b lang="en">Make a Loop</b>
+   <ul>
+    <li data-pid="slither"></li>
+    <li data-pid="vslither"></li>
+    <li data-pid="tslither"></li>
+    <li data-pid="swslither"></li>
+    <li data-pid="mashu"></li>
+    <li data-pid="yajilin"></li>
+    <li data-pid="slalom"></li>
+    <li data-pid="nagare"></li>
+    <li data-pid="mejilink"></li>
+    <li data-pid="angleloop"></li>
+    <li data-pid="scrin"></li>
+    <li data-pid="geradeweg"></li>
+    <li data-pid="castle"></li>
+    <li data-pid="midloop"></li>
+    <li data-pid="balance"></li>
+    <li data-pid="simpleloop"></li>
+    <li data-pid="tapaloop"></li>
+    <li data-pid="bdwalk"></li>
+    <li data-pid="disloop"></li>
+    <li data-pid="antmill"></li>
+    <li data-pid="koburin"></li>
+    <li data-pid="myopia"></li>
+    <li data-pid="waterwalk"></li>
+    <li data-pid="mukkonn"></li>
+    <li data-pid="lineofsight"></li>
+    <li data-pid="lixloop"></li>
+    <li data-pid="portal"></li>
+    <li data-pid="bosnianroad"></li>
+    <li data-pid="firewalk"></li>
+    <li data-pid="turnaround"></li>
+    <li data-pid="retsurin"></li>
+    <li data-pid="kurarin"></li>
+    <li data-pid="bunnyhop"></li>
+    <li data-pid="morningwalk"></li>
+    <li data-pid="bhaibahan"></li>
+    <li data-pid="roboticwalk"></li>
+    <li data-pid="nuriloop"></li>
+    <li data-pid="bwloop"></li>
+    <li data-pid="lring"></li>
+   </ul>
+  </div>
+  <div class="lists loops">
+   <b lang="ja">ループ+領域系</b>
+   <b lang="en">Loops and Regions</b>
+   <ul>
+    <li data-pid="moonsun"></li>
+    <li data-pid="country"></li>
+    <li data-pid="onsen"></li>
+    <li data-pid="doubleback"></li>
+    <li data-pid="yajilin-regions"></li>
+    <li data-pid="maxi"></li>
+    <li data-pid="detour"></li>
+    <li data-pid="haisu"></li>
+    <li data-pid="dotchi"></li>
+    <li data-pid="ovotovata"></li>
+    <li data-pid="railpool"></li>
+    <li data-pid="remlen"></li>
+    <li data-pid="nanameguri"></li>
+    <li data-pid="kaisu"></li>
+    <li data-pid="nothing"></li>
+    <li data-pid="pmemory"></li>
+    <li data-pid="fakearrow"></li>
+    <li data-pid="dotchi2"></li>
+    <li data-pid="heyajirimisaki"></li>
+   </ul>
+  </div>
+  <div class="lists loops">
+   <b lang="ja">交差ありループ系</b>
+   <b lang="en">Make a Crossing Loop</b>
+   <ul>
+    <li data-pid="icebarn"></li>
+    <li data-pid="barns"></li>
+    <li data-pid="pipelink"></li>
+    <li data-pid="pipelinkr"></li>
+    <li data-pid="icelom"></li>
+    <li data-pid="icelom2"></li>
+    <li data-pid="reflect"></li>
+    <li data-pid="loopsp"></li>
+    <li data-pid="nagenawa"></li>
+    <li data-pid="kouchoku"></li>
+    <li data-pid="ringring"></li>
+    <li data-pid="crossstitch"></li>
+    <li data-pid="roundtrip"></li>
+    <li data-pid="icewalk"></li>
+    <li data-pid="trainstations"></li>
+    <li data-pid="turnrun"></li>
+    <li data-pid="orbital"></li>
+    <li data-pid="circuitwalk"></li>
+    <li data-pid="vertigo"></li>
+   </ul>
+  </div>
+  <div class="lists lines">
+   <b lang="ja">線でつなぐパズル</b>
+   <b lang="en">Connecting Puzzles</b>
+   <ul>
+    <li data-pid="numlin"></li>
+    <li data-pid="wblink"></li>
+    <li data-pid="kusabi"></li>
+    <li data-pid="arukone"></li>
+    <li data-pid="rassi"></li>
+    <li data-pid="anglers"></li>
+    <li data-pid="mintonette"></li>
+    <li data-pid="wataridori"></li>
+    <li data-pid="uturns"></li>
+    <li data-pid="golemgrad"></li>
+    <li data-pid="elasticlink"></li>
+   </ul>
+  </div>
+  <div class="lists lines">
+   <b lang="ja">ひとつながりにするパズル</b>
+   <b lang="en">Connection Puzzles</b>
+   <ul>
+    <li data-pid="hashikake"></li>
+    <li data-pid="firefly"></li>
+    <li data-pid="ichimaga"></li>
+    <li data-pid="ichimagam"></li>
+    <li data-pid="ichimagax"></li>
+    <li data-pid="amibo"></li>
+    <li data-pid="coffeemilk"></li>
+    <li data-pid="ladders"></li>
+    <li data-pid="heyapin"></li>
+    <li data-pid="forestwalk"></li>
+    <li data-pid="diamond"></li>
+    <li data-pid="energywalk"></li>
+    <li data-pid="keywest"></li>
+    <li data-pid="ubahn"></li>
+    <li data-pid="seiza"></li>
+   </ul>
+  </div>
+  <div class="lists lines">
+   <b lang="ja">移動系パズル</b>
+   <b lang="en">Moving Puzzles</b>
+   <ul>
+    <li data-pid="herugolf"></li>
+    <li data-pid="kaero"></li>
+    <li data-pid="yosenabe"></li>
+    <li data-pid="armyants"></li>
+    <li data-pid="bonsan"></li>
+    <li data-pid="heyabon"></li>
+    <li data-pid="rectslider"></li>
+    <li data-pid="satogaeri"></li>
+    <li data-pid="yajisoko"></li>
+    <li data-pid="oyakodori"></li>
+    <li data-pid="brownies"></li>
+    <li data-pid="timebomb"></li>
+    <li data-pid="blindrush"></li>
+    <li data-pid="hamlepaths"></li>
+   </ul>
+  </div>
+  <div class="lists divides">
+   <b lang="ja">領域分割系</b>
+   <b lang="en">Divide into Areas</b>
+   <ul>
+    <li data-pid="shikaku"></li>
+    <li data-pid="bdblock"></li>
+    <li data-pid="fivecells"></li>
+    <li data-pid="sashigane"></li>
+    <li data-pid="nawabari"></li>
+    <li data-pid="triplace"></li>
+    <li data-pid="fourcells"></li>
+    <li data-pid="aho"></li>
+    <li data-pid="heteromino"></li>
+    <li data-pid="dbchoco"></li>
+    <li data-pid="compass"></li>
+    <li data-pid="araf"></li>
+    <li data-pid="nikoji"></li>
+    <li data-pid="lohkous"></li>
+    <li data-pid="lapaz"></li>
+    <li data-pid="tontti"></li>
+    <li data-pid="tajmahal"></li>
+    <li data-pid="mirrorbk"></li>
+    <li data-pid="familyphoto"></li>
+    <li data-pid="slashpack"></li>
+    <li data-pid="fracdiv"></li>
+    <li data-pid="sashikazune"></li>
+    <li data-pid="tachibk"></li>
+    <li data-pid="subomino"></li>
+    <li data-pid="meidjuluk"></li>
+    <li data-pid="balloon"></li>
+    <li data-pid="sendai"></li>
+    <li data-pid="heavydots"></li>
+    <li data-pid="trizone"></li>
+    <li data-pid="gravel"></li>
+  </ul>
+  </div>
+  <div class="lists divides">
+   <b lang="ja">領域分割系 (数字なし)</b>
+   <b lang="en">Divide into Areas (without number)</b>
+   <ul>
+    <li data-pid="tentaisho"></li>
+    <li data-pid="kramma"></li>
+    <li data-pid="kramman"></li>
+    <li data-pid="shwolf"></li>
+    <li data-pid="cbblock"></li>
+    <li data-pid="loute"></li>
+    <li data-pid="pentominous"></li>
+    <li data-pid="tetrominous"></li>
+    <li data-pid="voxas"></li>
+    <li data-pid="narrow"></li>
+    <li data-pid="longest"></li>
+   </ul>
+  </div>
+  <div class="lists divides">
+   <b lang="ja">タタミ系</b>
+   <b lang="en">Tatami Puzzles</b>
+   <ul>
+    <li data-pid="tatamibari"></li>
+    <li data-pid="fillmat"></li>
+    <li data-pid="usotatami"></li>
+    <li data-pid="yajitatami"></li>
+    <li data-pid="squarejam"></li>
+   </ul>
+  </div>
+  <div class="lists numbers">
+   <b lang="ja">数字系</b>
+   <b lang="en">Number Puzzles</b>
+   <ul>
+    <li data-pid="kakuro"></li>
+    <li data-pid="minarism"></li>
+    <li data-pid="sukoro"></li>
+    <li data-pid="kakuru"></li>
+    <li data-pid="view"></li>
+    <li data-pid="bosanowa"></li>
+    <li data-pid="skyscrapers"></li>
+    <li data-pid="kropki"></li>
+    <li data-pid="easyasabc"></li>
+    <li data-pid="doppelblock"></li>
+    <li data-pid="numrope"></li>
+    <li data-pid="simplegako"></li>
+    <li data-pid="japanesesums"></li>
+    <li data-pid="soulmates"></li>
+    <li data-pid="slovak"></li>
+   </ul>
+  </div>
+  <div class="lists numbers">
+   <b lang="ja">領域＋数字系</b>
+   <b lang="en">Areas and Numbers</b>
+   <ul>
+    <li data-pid="sudoku"></li>
+    <li data-pid="fillomino"></li>
+    <li data-pid="symmarea"></li>
+    <li data-pid="ripple"></li>
+    <li data-pid="factors"></li>
+    <li data-pid="makaro"></li>
+    <li data-pid="nanro"></li>
+    <li data-pid="cojun"></li>
+    <li data-pid="renban"></li>
+    <li data-pid="sukororoom"></li>
+    <li data-pid="hanare"></li>
+    <li data-pid="kazunori"></li>
+    <li data-pid="meander"></li>
+    <li data-pid="putteria"></li>
+    <li data-pid="toichika2"></li>
+    <li data-pid="snakepit"></li>
+    <li data-pid="wafusuma"></li>
+    <li data-pid="sananko"></li>
+    <li data-pid="twinarea"></li>
+    <li data-pid="numcity"></li>
+    <li data-pid="topo"></li>
+    <li data-pid="suguru"></li>
+    <li data-pid="jatahoku"></li>
+   </ul>
+  </div>
+  <div class="lists others">
+   <b lang="ja">その他 (線を引く)</b>
+   <b lang="en">Drawing Puzzles</b>
+   <ul>
+    <li data-pid="juosan"></li>
+    <li data-pid="gokigen"></li>
+    <li data-pid="tateyoko"></li>
+    <li data-pid="wagiri"></li>
+    <li data-pid="walllogic"></li>
+    <li data-pid="curvedata"></li>
+    <li data-pid="lither"></li>
+    <li data-pid="recoil"></li>
+    <li data-pid="tjunction"></li>
+    <li data-pid="ruleofthree"></li>
+   </ul>
+  </div>
+  <div class="lists others">
+   <b lang="ja">その他 (数字あり)</b>
+   <b lang="en">Variety Puzzles (with numbers)</b>
+   <ul>
+    <li data-pid="akari"></li>
+    <li data-pid="goishi"></li>
+    <li data-pid="shakashaka"></li>
+    <li data-pid="kinkonkan"></li>
+    <li data-pid="hebi"></li>
+    <li data-pid="shugaku"></li>
+    <li data-pid="pencils"></li>
+    <li data-pid="tents"></li>
+    <li data-pid="mines"></li>
+    <li data-pid="tren"></li>
+    <li data-pid="kaidan"></li>
+    <li data-pid="takoyaki"></li>
+    <li data-pid="magnets"></li>
+    <li data-pid="battleship"></li>
+    <li data-pid="wittgen"></li>
+    <li data-pid="zabajaba"></li>
+    <li data-pid="yajirushi2"></li>
+    <li data-pid="arrowflow"></li>
+    <li data-pid="distopia"></li>
+    <li data-pid="edamame"></li>
+   </ul>
+  </div>
+  <div class="lists others">
+   <b lang="ja">その他 (数字なし)</b>
+   <b lang="en">Variety Puzzles (without numbers)</b>
+   <ul>
+    <li data-pid="dosufuwa"></li>
+    <li data-pid="hakoiri"></li>
+    <li data-pid="roma"></li>
+    <li data-pid="toichika"></li>
+    <li data-pid="nondango"></li>
+    <li data-pid="yinyang"></li>
+    <li data-pid="starbattle"></li>
+    <li data-pid="statuepark"></li>
+    <li data-pid="pentopia"></li>
+    <li data-pid="lollipops"></li>
+    <li data-pid="news"></li>
+    <li data-pid="evolmino"></li>
+    <li data-pid="tontonbeya"></li>
+    <li data-pid="pentatouch"></li>
+    <li data-pid="alter"></li>
+    <li data-pid="kissing"></li>
+    <li data-pid="retroships"></li>
+    <li data-pid="regional-poly"></li>
+    <li data-pid="yajirushi"></li>
+    <li data-pid="mrokmrno"></li>
+    <li data-pid="scrabble"></li>
+   </ul>
+  </div>
+ </div>
+</div>
+
+<!-- ////////////////////////////////////////////////////////////////////// -->
+
+</div><!-- <div id="design1"> -->
+
+</div>
+
+</BODY>
+</HTML>

@@ -1,0 +1,61 @@
+# IceLom 仓库：忽略可再生 / 临时产物（远端：ProximaCentauri0/Icelom）
+
+# Python
+__pycache__/
+*.pyc
+
+# 临时文件（测试与长跑工具会写这些）
+_fz_*.json
+_t.log
+*.tmp
+
+# 求解器二进制：由 build.py / tools/taskset.ps1 build 生成，可随时重建
+# （若要分发二进制，请从本行删掉对应项）
+icelom_solver.exe
+
+# 渲染 / 截图产物：都是脚本生成的图（图标资产在下面显式放行）
+*.png
+# 例外：analysis/ 里这三张是**文档用图**（README 直接引用，也是 db039 那条回归线的可视证据），
+# 显式放行；analysis/ 其余产物仍不入库。
+!analysis/db039_solution.png
+!analysis/db039_deduce.png
+!analysis/db039_deduce_gui.png
+
+# Node
+node_modules/
+.npmcache/
+
+# 大体积 vendored 源码树（保留在磁盘上供重建 pzpr.concat.js；不入库）
+tests/pzprjs_src/
+tests/pzprjs.zip
+
+# pzprjs 重建输出（`node tools/build_concat.js` 的产物，重建后靠 build-pzpr 覆盖回
+# tools/pzprjs/ 的运行时位置，见 docs/资源与官方判别器.md）—— 可再生，不入库
+tools/pzprjs/dist/
+
+# ---------------------------------------------------------------------------
+# 以下为**显式放行**：上面几条通配规则会误伤下面这些"重建/发布必需"的文件。
+# （git 不会进入被忽略的目录，所以必须先放行目录再放行里面的文件）
+
+# vendored 官方引擎重建链：tools/build_concat.js 需要 src/ + src-ui/res/ +
+# package.json + node_modules/pzpr-canvas/dist/candle.js，缺一个就重建不了。
+!tools/pzprjs/node_modules/
+tools/pzprjs/node_modules/*
+!tools/pzprjs/node_modules/pzpr-canvas/
+tools/pzprjs/node_modules/pzpr-canvas/*
+!tools/pzprjs/node_modules/pzpr-canvas/dist/
+tools/pzprjs/node_modules/pzpr-canvas/dist/*
+!tools/pzprjs/node_modules/pzpr-canvas/dist/candle.js
+
+# 图标资产（assets/icelom.ico 是 GUI 真正加载的那个；PNG 是同一次生成的预览/发布用图）
+!assets/*.png
+
+# 按需生成的产物目录：长跑求解的落盘解
+benchmark/solutions/
+
+# 发布版（由 tools/make_release.py 生成，可随时重建）
+release/
+
+# 快捷方式与启动器（由 tools/make_shortcut.py 生成，内容是绝对路径的快捷方式，不入库）
+*.lnk
+tools/launch_icelom.cmd

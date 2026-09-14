@@ -1,0 +1,72 @@
+推导器可靠性审计: 规则 + 逐格逐方向试连接
+单题求解时限 8.0 s; 判据: 确定边 ⊂ 真解, 被排除边 ∩ 真解 = ∅, 有解题不得报矛盾
+
+题面                                             确定      禁     未定     推错     误禁  结论
+----------------------------------------------------------------------------------------------------
+db001_9x9_bachelor-seal.json                   61     44     39      0      0  OK
+db002_8x8_bachelor-seal.json                   40     30     42      0      0  OK
+db003_9x8_bachelor-seal.json                   78     49      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db004_8x8_bachelor-seal.json                   62     50      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db005_8x8_bachelor-seal.json                   62     50      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db006_8x8_bachelor-seal.json                   66     46      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db007_8x8_bachelor-seal.json                   66     46      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db008_8x8_bachelor-seal.json                   39     43     30      0      0  OK
+db009_8x8_bachelor-seal.json                   48     43     21      0      0  OK
+db010_8x8_bachelor-seal.json                   66     46      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db011_8x8_bachelor-seal.json                   66     46      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db012_8x8_bachelor-seal.json                   25     31     56      0      0  OK
+db013_8x8_bachelor-seal.json                   63     49      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db014_8x8_bachelor-seal.json                   68     44      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db015_8x8_bachelor-seal.json                   64     47      1      0      0  OK
+db016_9x9_dj-puzzles.json                      12      6    126      0      0  OK
+db017_5x7_ericfox53.json                       30     28      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db018_9x4_takmu53.json                         34     25      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db019_10x10_bakpao-puz.json                    29     22    129      0      0  OK
+db020_6x6_pawakun.json                         34     26      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db021_12x4_pawakun.json                        40     40      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db022_4x6_atraingrooveryy.json                  0      0     38      0      0  OK
+db023_6x7_udop.json                            32     39      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db024_4x6_chebunanntoka.json                   20     18      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db025_10x4_chebunanntoka.json                  34     32      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db026_10x6_chebunanntoka.json                  48     56      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db027_5x5_wand-125.json                        26     14      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db028_19x5_pancakepuzzles.json                 60     75     31      0      0  OK
+db029_11x11_menderbug.json                      0      0    220      0      0  OK
+db030_7x7_takmu73.json                         10      2     72      0      0  OK
+db031_6x6_jonnjonn69.json                       4      5     51      0      0  OK
+db032_6x6_ericfox53.json                       40     20      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db033_8x8_bakpao-puz.json                      28     14     70      0      0  OK
+db034_10x7_pancakepuzzles.json                 27      9     87      0      0  OK
+db035_8x8_bakpao-puz.json                      10      7     95      0      0  OK
+db036_9x9_qpinemarch323.json                   44     33     67      0      0  OK
+db037_12x13_bakpao-puz.json                   121    133     33      0      0  OK
+db038_9x9_xoned72.json                         68     54     22      0      0  OK
+db039_13x13_0vanillaice0.json                 170    142      0      0      0  OK  (整条线路推完, 独立验证器通过)  (落盘解)
+db040_6x6_qpinemarch323.json                   28     32      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db041_6x6_qpinemarch323.json                   34     26      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db042_10x10_qpinemarch323.json                 84     96      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db043_8x8_kjry0.json                           24     17     71      0      0  OK
+db045_14x14_nu-n-notami.json                    0      0    364      0      0  OK
+db046_6x6_ihnnpuzzles.json                     13      7     40      0      0  OK
+db047_8x8_ihnnpuzzles.json                     40     35     37      0      0  OK
+db048_11x9_ihnnpuzzles.json                    12     34    132      0      0  OK
+db049_9x9_tckmn.json                            8      2    134      0      0  OK
+db052_6x6_qpinemarch323.json                   30     30      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db053_5x5_qpinemarch323.json                   24     16      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db054_8x8_potechi1104.json                     65     47      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db055_6x6_daikichi-3141.json                   27     33      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db056_9x13_0vanillaice0.json                   20      5    187      0      0  OK
+db057_6x6_3892myamya.json                      16      8     36      0      0  OK
+db058_8x8_hotatenohontate.json                 61     51      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db059_8x8_usbe-puz.json                        40     31     41      0      0  OK
+db060_9x9_kiiroipazuru-blog-fc2-com.json       39     21     84      0      0  OK
+db061_6x6_kiiroipazuru-blog-fc2-com.json       34     26      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db062_6x6_kiiroipazuru-blog-fc2-com.json       32     28      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db063_8x8_puzzleblog542-blog-fc2-com.json      63     49      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db064_8x8_puzzleblog542-blog-fc2-com.json      47     37     28      0      0  OK
+db065_8x8_puzzleblog542-blog-fc2-com.json      37     27     48      0      0  OK
+db066_8x8_puzzleblog542-blog-fc2-com.json      60     52      0      0      0  OK  (整条线路推完, 独立验证器通过)
+db067_8x8_puzzleblog542-blog-fc2-com.json      24     15     73      0      0  OK
+db068_6x6_puzzleblog542-blog-fc2-com.json      36     24      0      0      0  OK  (整条线路推完, 独立验证器通过)
+----------------------------------------------------------------------------------------------------
+共 65 题: 拿到真解 65 题(跳过 0 题); 不可靠 0 题; 总用时 7.3 s

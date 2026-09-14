@@ -1,0 +1,10 @@
+# 让 git **原样保存仓库里的字节**：不做任何换行符转换（`core.autocrlf` 也设为 false）。
+#
+# 理由（三条都是这个仓库里真实存在的约束）：
+#   1. `tools/taskset.ps1` 等 PowerShell 脚本**必须带 UTF-8 BOM**：Windows PowerShell 5.1 会把
+#      无 BOM 的脚本按 CP936 解析，中文直接语法报错；
+#   2. `example/01_经典9x9.json` 是 LF、其余示例是 `tools/make_examples.py` 写出的 CRLF，
+#      这些字节差异是既成事实，不该被 git 在 checkout 时悄悄统一；
+#   3. `tools/pzprjs/pzpr.concat.js` 可以用 `node tools/build_concat.js` **逐字节重建**，
+#      换行转换会让这条验证失去意义。
+* -text
